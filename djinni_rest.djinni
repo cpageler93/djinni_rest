@@ -1,0 +1,10 @@
+post_model = record {
+	id: i64;
+	title: string;
+	body: string;
+}
+
+posts_service = interface +c {
+	static create(): posts_service;
+	get_posts_index(): list<post_model>;
+}
