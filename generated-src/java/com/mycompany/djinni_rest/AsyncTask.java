@@ -3,15 +3,12 @@
 
 package com.mycompany.djinni_rest;
 
-import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public abstract class PostsService {
-    public abstract ArrayList<PostModel> getPostsIndex();
+public abstract class AsyncTask {
+    public abstract void execute();
 
-    public static native PostsService create();
-
-    private static final class CppProxy extends PostsService
+    private static final class CppProxy extends AsyncTask
     {
         private final long nativeRef;
         private final AtomicBoolean destroyed = new AtomicBoolean(false);
@@ -35,11 +32,11 @@ public abstract class PostsService {
         }
 
         @Override
-        public ArrayList<PostModel> getPostsIndex()
+        public void execute()
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            return native_getPostsIndex(this.nativeRef);
+            native_execute(this.nativeRef);
         }
-        private native ArrayList<PostModel> native_getPostsIndex(long _nativeRef);
+        private native void native_execute(long _nativeRef);
     }
 }

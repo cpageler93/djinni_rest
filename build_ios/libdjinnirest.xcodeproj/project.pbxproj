@@ -22,15 +22,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3535CCB2520FD65F065B1C01 /* DRPostModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00C2F2A5EAF122E2D003F696 /* DRPostModel+Private.mm */; };
-		4DA0001E1F0E2DD6A2543698 /* post_service_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B824D151B00F05B7536CABDB /* post_service_impl.cpp */; };
-		634D1AE961BF5E4AC3A306BD /* DRPostsService+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04114D01D817EB3A1739D32B /* DRPostsService+Private.mm */; };
-		9AB4892375A49D5621859ACD /* NativePostModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0471C175AF40E84728B3094E /* NativePostModel.cpp */; };
+		16C7444B9B99E0E25D731D25 /* NativeAsyncTask+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */; };
+		38D9F411552289BB4059AC87 /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
+		5106E04C7E1350D28C9BDE06 /* NativeApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */; };
+		5566C897104096CABB6DF8C5 /* NativeAsyncTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */; };
+		59994EB355C3134E0E313AAC /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
+		7184255C73870C3A61B7DEE3 /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
 		A00462E578DACF24D43D12A8 /* djinni_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66C1133B7E181CA277806AF5 /* djinni_main.cpp */; };
-		A17ACCFE4CABE39289FF5525 /* post_service_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B824D151B00F05B7536CABDB /* post_service_impl.cpp */; };
-		C5694B0D15AEB482EE1FAB13 /* DRPostModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = F19097E235CB917E0FCEE6AB /* DRPostModel.mm */; };
+		A56EC8032CBB10CB38F5AE74 /* NativeThreadLauncher+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */; };
 		CC0C2B6EB9E44EE60ACF0A0E /* libdjinni_jni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B489D6C8ECECCBA93801316 /* libdjinni_jni.a */; };
-		F8071483B0B4247B8B93D1E5 /* NativePostsService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE7E9227D2D6B79A825AA4FE /* NativePostsService.cpp */; };
+		D1A737E1882B979C7167BB42 /* NativeThreadLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */; };
+		D9D50484F83AAB004C14EAC0 /* NativeApi+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 684F59357A0F0650221AE462 /* NativeApi+Private.mm */; };
+		E8D08F4538290BB4240B8B02 /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,17 +76,19 @@
 
 /* Begin PBXFileReference section */
 		00AEE462F847F82A76833A33 /* libdjinnirest_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdjinnirest_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		00C2F2A5EAF122E2D003F696 /* DRPostModel+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DRPostModel+Private.mm"; sourceTree = "<group>"; };
-		04114D01D817EB3A1739D32B /* DRPostsService+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DRPostsService+Private.mm"; sourceTree = "<group>"; };
-		0471C175AF40E84728B3094E /* NativePostModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativePostModel.cpp; sourceTree = "<group>"; };
+		203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeAsyncTask+Private.mm"; sourceTree = "<group>"; };
+		23B9EF9BA1EE764148342449 /* api_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = api_impl.cpp; sourceTree = "<group>"; };
+		4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeThreadLauncher.cpp; sourceTree = "<group>"; };
+		63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeThreadLauncher+Private.mm"; sourceTree = "<group>"; };
 		66C1133B7E181CA277806AF5 /* djinni_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = djinni_main.cpp; sourceTree = "<group>"; };
+		684F59357A0F0650221AE462 /* NativeApi+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeApi+Private.mm"; sourceTree = "<group>"; };
 		9E21D62DC6A8C69F8B4E1596 /* support_lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = support_lib.xcodeproj; path = "build_ios/deps/djinni/support-lib/support_lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A2FAE8D68D0F1544E326B297 /* libdjinnirest_jni.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdjinnirest_jni.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		B824D151B00F05B7536CABDB /* post_service_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = post_service_impl.cpp; sourceTree = "<group>"; };
-		BE7E9227D2D6B79A825AA4FE /* NativePostsService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativePostsService.cpp; sourceTree = "<group>"; };
+		AA743765723B7C1526DE2A8F /* async_task_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = async_task_impl.cpp; sourceTree = "<group>"; };
 		CEDDFF93C9050512344B0D49 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = deps/djinni/common.gypi; sourceTree = "<group>"; };
-		F19097E235CB917E0FCEE6AB /* DRPostModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DRPostModel.mm; sourceTree = "<group>"; };
+		E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeApi.cpp; sourceTree = "<group>"; };
 		F5303BCFB86B17C8BC0C96AA /* libdjinnirest.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = libdjinnirest.gyp; sourceTree = "<group>"; };
+		FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeAsyncTask.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,21 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C7537D2F9CA6C5F691950BD /* src */ = {
+		1DFB78499B779E47A9851D0B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				B824D151B00F05B7536CABDB /* post_service_impl.cpp */,
+				23B9EF9BA1EE764148342449 /* api_impl.cpp */,
+				AA743765723B7C1526DE2A8F /* async_task_impl.cpp */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		27DDED30A5C2752538AA710C /* jni */ = {
-			isa = PBXGroup;
-			children = (
-				0471C175AF40E84728B3094E /* NativePostModel.cpp */,
-				BE7E9227D2D6B79A825AA4FE /* NativePostsService.cpp */,
-			);
-			path = jni;
 			sourceTree = "<group>";
 		};
 		4D0D7DF9D25AB870526A551B /* Products */ = {
@@ -144,17 +141,27 @@
 			children = (
 				E3F200F1E0D1CF4B6107A559 /* deps/djinni/support-lib/jni */,
 				EF8DF1DB99957009B37F8666 /* generated-src */,
-				0C7537D2F9CA6C5F691950BD /* src */,
+				1DFB78499B779E47A9851D0B /* src */,
 			);
 			name = Source;
 			sourceTree = "<group>";
 		};
-		A879A5621B731FDF9EEBF41A /* objc */ = {
+		99A2D0A0DBA4ABD397147EE0 /* jni */ = {
 			isa = PBXGroup;
 			children = (
-				00C2F2A5EAF122E2D003F696 /* DRPostModel+Private.mm */,
-				F19097E235CB917E0FCEE6AB /* DRPostModel.mm */,
-				04114D01D817EB3A1739D32B /* DRPostsService+Private.mm */,
+				E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */,
+				FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */,
+				4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */,
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
+		B89A59654712A3F08787E2FB /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				684F59357A0F0650221AE462 /* NativeApi+Private.mm */,
+				203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */,
+				63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -198,8 +205,8 @@
 		EF8DF1DB99957009B37F8666 /* generated-src */ = {
 			isa = PBXGroup;
 			children = (
-				27DDED30A5C2752538AA710C /* jni */,
-				A879A5621B731FDF9EEBF41A /* objc */,
+				99A2D0A0DBA4ABD397147EE0 /* jni */,
+				B89A59654712A3F08787E2FB /* objc */,
 			);
 			path = "generated-src";
 			sourceTree = "<group>";
@@ -291,9 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00462E578DACF24D43D12A8 /* djinni_main.cpp in Sources */,
-				9AB4892375A49D5621859ACD /* NativePostModel.cpp in Sources */,
-				F8071483B0B4247B8B93D1E5 /* NativePostsService.cpp in Sources */,
-				4DA0001E1F0E2DD6A2543698 /* post_service_impl.cpp in Sources */,
+				5106E04C7E1350D28C9BDE06 /* NativeApi.cpp in Sources */,
+				5566C897104096CABB6DF8C5 /* NativeAsyncTask.cpp in Sources */,
+				D1A737E1882B979C7167BB42 /* NativeThreadLauncher.cpp in Sources */,
+				59994EB355C3134E0E313AAC /* api_impl.cpp in Sources */,
+				E8D08F4538290BB4240B8B02 /* async_task_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,10 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3535CCB2520FD65F065B1C01 /* DRPostModel+Private.mm in Sources */,
-				C5694B0D15AEB482EE1FAB13 /* DRPostModel.mm in Sources */,
-				634D1AE961BF5E4AC3A306BD /* DRPostsService+Private.mm in Sources */,
-				A17ACCFE4CABE39289FF5525 /* post_service_impl.cpp in Sources */,
+				D9D50484F83AAB004C14EAC0 /* NativeApi+Private.mm in Sources */,
+				16C7444B9B99E0E25D731D25 /* NativeAsyncTask+Private.mm in Sources */,
+				A56EC8032CBB10CB38F5AE74 /* NativeThreadLauncher+Private.mm in Sources */,
+				7184255C73870C3A61B7DEE3 /* api_impl.cpp in Sources */,
+				38D9F411552289BB4059AC87 /* async_task_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

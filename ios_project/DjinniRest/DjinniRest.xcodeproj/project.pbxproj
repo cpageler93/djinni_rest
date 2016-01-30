@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5989255A1C5C283E004D2BB0 /* ThreadLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925591C5C283E004D2BB0 /* ThreadLauncher.m */; };
+		599E42A01C5A8B1200653243 /* libdjinni_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 599E429E1C5A8B1200653243 /* libdjinni_objc.a */; };
+		599E42A11C5A8B1200653243 /* libdjinnirest_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 599E429F1C5A8B1200653243 /* libdjinnirest_objc.a */; };
 		59AFE8681C56B4A000034BCF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59AFE8671C56B4A000034BCF /* main.mm */; };
 		59AFE86B1C56B4A000034BCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AFE86A1C56B4A000034BCF /* AppDelegate.m */; };
 		59AFE86E1C56B4A000034BCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AFE86D1C56B4A000034BCF /* ViewController.m */; };
@@ -15,8 +18,6 @@
 		59AFE8761C56B4A000034BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AFE8741C56B4A000034BCF /* LaunchScreen.storyboard */; };
 		59AFE8811C56B4A000034BCF /* DjinniRestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AFE8801C56B4A000034BCF /* DjinniRestTests.m */; };
 		59AFE88C1C56B4A000034BCF /* DjinniRestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AFE88B1C56B4A000034BCF /* DjinniRestUITests.m */; };
-		59AFE8AA1C56B83D00034BCF /* libdjinni_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AFE8A81C56B83D00034BCF /* libdjinni_objc.a */; };
-		59AFE8AB1C56B83D00034BCF /* libdjinnirest_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AFE8A91C56B83D00034BCF /* libdjinnirest_objc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		598925581C5C283E004D2BB0 /* ThreadLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadLauncher.h; path = Native/ThreadLauncher.h; sourceTree = "<group>"; };
+		598925591C5C283E004D2BB0 /* ThreadLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreadLauncher.m; path = Native/ThreadLauncher.m; sourceTree = "<group>"; };
+		599E429E1C5A8B1200653243 /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../deps/djinni/support-lib/build/Debug-iphoneos/libdjinni_objc.a"; sourceTree = "<group>"; };
+		599E429F1C5A8B1200653243 /* libdjinnirest_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinnirest_objc.a; path = "../../build/Debug-iphoneos/libdjinnirest_objc.a"; sourceTree = "<group>"; };
 		59AFE8631C56B4A000034BCF /* DjinniRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjinniRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AFE8671C56B4A000034BCF /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		59AFE8691C56B4A000034BCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,8 +58,6 @@
 		59AFE8871C56B4A000034BCF /* DjinniRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DjinniRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59AFE88B1C56B4A000034BCF /* DjinniRestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DjinniRestUITests.m; sourceTree = "<group>"; };
 		59AFE88D1C56B4A000034BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59AFE8A81C56B83D00034BCF /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../deps/djinni/support-lib/build/Debug-iphoneos/libdjinni_objc.a"; sourceTree = "<group>"; };
-		59AFE8A91C56B83D00034BCF /* libdjinnirest_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinnirest_objc.a; path = "../../build/Debug-iphoneos/libdjinnirest_objc.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59AFE8AA1C56B83D00034BCF /* libdjinni_objc.a in Frameworks */,
-				59AFE8AB1C56B83D00034BCF /* libdjinnirest_objc.a in Frameworks */,
+				599E42A01C5A8B1200653243 /* libdjinni_objc.a in Frameworks */,
+				599E42A11C5A8B1200653243 /* libdjinnirest_objc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,11 +87,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		598925571C5C282F004D2BB0 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				598925581C5C283E004D2BB0 /* ThreadLauncher.h */,
+				598925591C5C283E004D2BB0 /* ThreadLauncher.m */,
+			);
+			name = Native;
+			sourceTree = "<group>";
+		};
 		59AFE85A1C56B4A000034BCF = {
 			isa = PBXGroup;
 			children = (
-				59AFE8A81C56B83D00034BCF /* libdjinni_objc.a */,
-				59AFE8A91C56B83D00034BCF /* libdjinnirest_objc.a */,
+				599E429E1C5A8B1200653243 /* libdjinni_objc.a */,
+				599E429F1C5A8B1200653243 /* libdjinnirest_objc.a */,
 				59AFE8651C56B4A000034BCF /* DjinniRest */,
 				59AFE87F1C56B4A000034BCF /* DjinniRestTests */,
 				59AFE88A1C56B4A000034BCF /* DjinniRestUITests */,
@@ -109,6 +121,7 @@
 		59AFE8651C56B4A000034BCF /* DjinniRest */ = {
 			isa = PBXGroup;
 			children = (
+				598925571C5C282F004D2BB0 /* Native */,
 				59AFE8691C56B4A000034BCF /* AppDelegate.h */,
 				59AFE86A1C56B4A000034BCF /* AppDelegate.m */,
 				59AFE86C1C56B4A000034BCF /* ViewController.h */,
@@ -279,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59AFE86E1C56B4A000034BCF /* ViewController.m in Sources */,
+				5989255A1C5C283E004D2BB0 /* ThreadLauncher.m in Sources */,
 				59AFE86B1C56B4A000034BCF /* AppDelegate.m in Sources */,
 				59AFE8681C56B4A000034BCF /* main.mm in Sources */,
 			);

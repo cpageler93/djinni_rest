@@ -1,13 +1,16 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5CCA0773F504DD0032A8405D0242513F26B566A3",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5CCA0773F504DD0032A8405D0242513F26B566A3" : 0,
     "71475E29359A335CF2FDA08919E128C7DF9BFD9A" : 0,
     "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9461C8EC-32BB-46C6-9B50-4A60CA21BEAE",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5CCA0773F504DD0032A8405D0242513F26B566A3" : "djinni_rest\/",
     "71475E29359A335CF2FDA08919E128C7DF9BFD9A" : "..\/private\/hello_djinni",
     "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B" : "..\/private\/hello_djinni\/deps\/djinni"
   },
@@ -19,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dropbox\/djinni.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cpageler93\/djinni_rest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CCA0773F504DD0032A8405D0242513F26B566A3"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cpageler93\/hello_djinni.git",

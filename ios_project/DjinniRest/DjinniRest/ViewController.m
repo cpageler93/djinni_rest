@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "DRPostsService.h"
 
 @interface ViewController ()
 
@@ -19,9 +18,6 @@
 {
 	[super viewDidLoad];
 	
-	DRPostsService *postService = [DRPostsService create];
-	NSArray *postsIndex = [postService getPostsIndex];
-	NSLog(@"Posts Index: %@", postsIndex);
 }
 
 - (void)didReceiveMemoryWarning {

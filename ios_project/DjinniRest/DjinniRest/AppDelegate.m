@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "NativeApi.h"
+#import "ThreadLauncher.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,14 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+	ThreadLauncher *threadLauncher = [[ThreadLauncher alloc] init];
+	NativeApi *nativeApi = [NativeApi createApi:threadLauncher];
+	
+	[nativeApi doSomething];
+	
 	return YES;
 }
 
