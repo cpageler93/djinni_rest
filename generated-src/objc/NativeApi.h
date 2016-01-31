@@ -3,9 +3,8 @@
 
 #import <Foundation/Foundation.h>
 @class NativeApi;
-@protocol NativeApiResponse;
+@protocol NativeApiPostsResponse;
 @protocol NativeHttp;
-@protocol NativePostsIndexResponse;
 @protocol NativeThreadLauncher;
 
 
@@ -14,8 +13,9 @@
 + (nullable NativeApi *)createApi:(nullable id<NativeThreadLauncher>)launcher
                              http:(nullable id<NativeHttp>)http;
 
-- (void)doSomething:(nullable id<NativeApiResponse>)apiResponse;
+- (void)getPostsIndex:(nullable id<NativeApiPostsResponse>)apiPostsResponse;
 
-- (void)getPostsIndex:(nullable id<NativePostsIndexResponse>)postsIndexResponse;
+- (void)getPostsShow:(int64_t)postId
+    apiPostsResponse:(nullable id<NativeApiPostsResponse>)apiPostsResponse;
 
 @end

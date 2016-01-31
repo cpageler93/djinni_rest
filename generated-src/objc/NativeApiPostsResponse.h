@@ -5,9 +5,11 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol NativePostsIndexResponse
+@protocol NativeApiPostsResponse
 
-- (void)onSuccess:(nonnull NSArray<NativePostModel *> *)result;
+- (void)onIndexSuccess:(nonnull NSArray<NativePostModel *> *)result;
+
+- (void)onShowSuccess:(nonnull NativePostModel *)result;
 
 - (void)onFailure;
 

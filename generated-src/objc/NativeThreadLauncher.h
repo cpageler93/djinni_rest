@@ -7,7 +7,6 @@
 
 @protocol NativeThreadLauncher
 
-/** name is nullable */
 - (void)startThread:(nonnull NSString *)name
               runFn:(nullable NativeAsyncTask *)runFn;
 

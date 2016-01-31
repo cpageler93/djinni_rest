@@ -9,11 +9,13 @@ namespace djinni_rest_gen {
 
 struct PostModel;
 
-class PostsIndexResponse {
+class ApiPostsResponse {
 public:
-    virtual ~PostsIndexResponse() {}
+    virtual ~ApiPostsResponse() {}
 
-    virtual void on_success(const std::vector<PostModel> & result) = 0;
+    virtual void on_index_success(const std::vector<PostModel> & result) = 0;
+
+    virtual void on_show_success(const PostModel & result) = 0;
 
     virtual void on_failure() = 0;
 };

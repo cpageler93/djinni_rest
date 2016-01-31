@@ -14,7 +14,6 @@ class ThreadLauncher {
 public:
     virtual ~ThreadLauncher() {}
 
-    /** name is nullable */
     virtual void start_thread(const std::string & name, const std::shared_ptr<AsyncTask> & run_fn) = 0;
 };
 

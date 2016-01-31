@@ -4,6 +4,5 @@
 package com.mycompany.djinni_rest;
 
 public abstract class ThreadLauncher {
-    /** name is nullable */
     public abstract void startThread(String name, AsyncTask runFn);
 }

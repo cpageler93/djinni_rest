@@ -1,5 +1,4 @@
 thread_launcher = interface +o +j {
-    # name is nullable
     start_thread(name: string, run_fn: async_task);
 }
 
@@ -16,13 +15,9 @@ post_model = record {
 
 
 
-api_response = interface +o +j {
-	on_success(result: string);
-	on_failure();
-}
-
-posts_index_response = interface +o +j {
-	on_success(result: list<post_model>);
+api_posts_response = interface +o +j {
+	on_index_success(result: list<post_model>);
+	on_show_success(result: post_model);
 	on_failure();
 }
 
@@ -31,8 +26,8 @@ posts_index_response = interface +o +j {
 api = interface +c {
     static create_api(launcher: thread_launcher, http: http): api;
 
-    do_something(api_response: api_response);
-    get_posts_index(posts_index_response: posts_index_response);
+    get_posts_index(api_posts_response: api_posts_response);
+    get_posts_show(post_id: i64, api_posts_response: api_posts_response);
 }
 
 

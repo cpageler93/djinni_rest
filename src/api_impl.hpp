@@ -3,9 +3,8 @@
 #include "thread_launcher.hpp"
 #include "http.hpp"
 #include "http_method.hpp"
-#include "api_response.hpp"
 #include "post_model.hpp"
-#include "posts_index_response.hpp"
+#include "api_posts_response.hpp"
 
 namespace djinni_rest {
 
@@ -16,9 +15,9 @@ namespace djinni_rest {
 			const std::shared_ptr<djinni_rest_gen::ThreadLauncher> & launcher,
 			const std::shared_ptr<djinni_rest_gen::Http> & http
 		);
-
-		virtual void do_something(const std::shared_ptr<djinni_rest_gen::ApiResponse> & api_response);
-		virtual void get_posts_index(const std::shared_ptr<djinni_rest_gen::PostsIndexResponse> & posts_index_response);
+		
+		virtual void get_posts_index(const std::shared_ptr<djinni_rest_gen::ApiPostsResponse> & api_posts_response);
+		virtual void get_posts_show(int64_t post_id, const std::shared_ptr<djinni_rest_gen::ApiPostsResponse> & api_posts_response);
 	private:
 		std::shared_ptr<djinni_rest_gen::ThreadLauncher> m_thread_launcher;
 		std::shared_ptr<djinni_rest_gen::Http> m_http;

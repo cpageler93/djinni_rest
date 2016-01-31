@@ -5,8 +5,10 @@ package com.mycompany.djinni_rest;
 
 import java.util.ArrayList;
 
-public abstract class PostsIndexResponse {
-    public abstract void onSuccess(ArrayList<PostModel> result);
+public abstract class ApiPostsResponse {
+    public abstract void onIndexSuccess(ArrayList<PostModel> result);
+
+    public abstract void onShowSuccess(PostModel result);
 
     public abstract void onFailure();
 }

@@ -9,8 +9,7 @@
 #import "ViewController.h"
 #import "NativeApi.h"
 #import "ThreadLauncher.h"
-#import "ApiResponse.h"
-#import "PostsIndexResponse.h"
+#import "ApiPostsResponse.h"
 #import "Http.h"
 
 @interface ViewController ()
@@ -29,26 +28,29 @@
 	NativeApi *nativeApi = [NativeApi createApi:threadLauncher
 										   http:http];
 	
-//	NSLog(@"1");
-//	
-//	[nativeApi doSomething:[ApiResponse apiResponseOnSuccess:^(NSString *result) {
-//		
-//		NSString *threadName = [NSThread currentThread].name;
-//		
-//		NSLog(@"objc success: %@ in thread %@", result, threadName);
-//				
-//	} onFailure:^{
-//		NSLog(@"objc failure");
-//	}]];
-//	
-//	NSLog(@"2");
-	
-	[nativeApi getPostsIndex:[PostsIndexResponse responseOnSuccess:^(NSArray<NativePostModel *> *posts) {
+	[nativeApi getPostsIndex:[ApiPostsResponse indexResponseOnSuccess:^(NSArray<NativePostModel *> *posts) {
+		
 		NSLog(@"Posts: %@", posts);
 		[self logThreadName];
+		
 	} onFailure:^{
+		
 		NSLog(@"failure");
 		[self logThreadName];
+		
+	}]];
+	
+	[nativeApi getPostsShow:1
+		   apiPostsResponse:[ApiPostsResponse showResponseOnSuccess:^(NativePostModel *post) {
+		
+		NSLog(@"Post: %@", post);
+		[self logThreadName];
+		
+	} onFailure:^{
+		
+		NSLog(@"failure");
+		[self logThreadName];
+		
 	}]];
 }
 

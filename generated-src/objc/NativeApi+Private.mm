@@ -5,10 +5,10 @@
 #import "NativeApi.h"
 #import "DJICppWrapperCache+Private.h"
 #import "DJIError.h"
+#import "DJIMarshal+Private.h"
 #import "NativeApi+Private.h"
-#import "NativeApiResponse+Private.h"
+#import "NativeApiPostsResponse+Private.h"
 #import "NativeHttp+Private.h"
-#import "NativePostsIndexResponse+Private.h"
 #import "NativeThreadLauncher+Private.h"
 #include <exception>
 #include <utility>
@@ -42,15 +42,17 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
-- (void)doSomething:(nullable id<NativeApiResponse>)apiResponse {
+- (void)getPostsIndex:(nullable id<NativeApiPostsResponse>)apiPostsResponse {
     try {
-        _cppRefHandle.get()->do_something(::djinni_generated::ApiResponse::toCpp(apiResponse));
+        _cppRefHandle.get()->get_posts_index(::djinni_generated::ApiPostsResponse::toCpp(apiPostsResponse));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
-- (void)getPostsIndex:(nullable id<NativePostsIndexResponse>)postsIndexResponse {
+- (void)getPostsShow:(int64_t)postId
+    apiPostsResponse:(nullable id<NativeApiPostsResponse>)apiPostsResponse {
     try {
-        _cppRefHandle.get()->get_posts_index(::djinni_generated::PostsIndexResponse::toCpp(postsIndexResponse));
+        _cppRefHandle.get()->get_posts_show(::djinni::I64::toCpp(postId),
+                                            ::djinni_generated::ApiPostsResponse::toCpp(apiPostsResponse));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

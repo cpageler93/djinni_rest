@@ -3,13 +3,13 @@
 
 #pragma once
 
+#include <cstdint>
 #include <memory>
 
 namespace djinni_rest_gen {
 
-class ApiResponse;
+class ApiPostsResponse;
 class Http;
-class PostsIndexResponse;
 class ThreadLauncher;
 
 class Api {
@@ -18,9 +18,9 @@ public:
 
     static std::shared_ptr<Api> create_api(const std::shared_ptr<ThreadLauncher> & launcher, const std::shared_ptr<Http> & http);
 
-    virtual void do_something(const std::shared_ptr<ApiResponse> & api_response) = 0;
+    virtual void get_posts_index(const std::shared_ptr<ApiPostsResponse> & api_posts_response) = 0;
 
-    virtual void get_posts_index(const std::shared_ptr<PostsIndexResponse> & posts_index_response) = 0;
+    virtual void get_posts_show(int64_t post_id, const std::shared_ptr<ApiPostsResponse> & api_posts_response) = 0;
 };
 
 }  // namespace djinni_rest_gen

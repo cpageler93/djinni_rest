@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5989255A1C5C283E004D2BB0 /* ThreadLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925591C5C283E004D2BB0 /* ThreadLauncher.m */; };
-		598925641C5CD949004D2BB0 /* ApiResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925631C5CD949004D2BB0 /* ApiResponse.m */; };
 		598925681C5CE668004D2BB0 /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925671C5CE668004D2BB0 /* Http.m */; };
-		5989256C1C5CED2A004D2BB0 /* PostsIndexResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989256B1C5CED2A004D2BB0 /* PostsIndexResponse.m */; };
+		5989256C1C5CED2A004D2BB0 /* ApiPostsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989256B1C5CED2A004D2BB0 /* ApiPostsResponse.m */; };
 		599E42A01C5A8B1200653243 /* libdjinni_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 599E429E1C5A8B1200653243 /* libdjinni_objc.a */; };
 		599E42A11C5A8B1200653243 /* libdjinnirest_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 599E429F1C5A8B1200653243 /* libdjinnirest_objc.a */; };
 		59AFE8681C56B4A000034BCF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59AFE8671C56B4A000034BCF /* main.mm */; };
@@ -43,12 +42,10 @@
 /* Begin PBXFileReference section */
 		598925581C5C283E004D2BB0 /* ThreadLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadLauncher.h; path = Native/ThreadLauncher.h; sourceTree = "<group>"; };
 		598925591C5C283E004D2BB0 /* ThreadLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreadLauncher.m; path = Native/ThreadLauncher.m; sourceTree = "<group>"; };
-		598925621C5CD949004D2BB0 /* ApiResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiResponse.h; path = Native/ApiResponse.h; sourceTree = "<group>"; };
-		598925631C5CD949004D2BB0 /* ApiResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiResponse.m; path = Native/ApiResponse.m; sourceTree = "<group>"; };
 		598925661C5CE668004D2BB0 /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Http.h; path = Native/Http.h; sourceTree = "<group>"; };
 		598925671C5CE668004D2BB0 /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Http.m; path = Native/Http.m; sourceTree = "<group>"; };
-		5989256A1C5CED2A004D2BB0 /* PostsIndexResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostsIndexResponse.h; path = Native/PostsIndexResponse.h; sourceTree = "<group>"; };
-		5989256B1C5CED2A004D2BB0 /* PostsIndexResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostsIndexResponse.m; path = Native/PostsIndexResponse.m; sourceTree = "<group>"; };
+		5989256A1C5CED2A004D2BB0 /* ApiPostsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiPostsResponse.h; path = Native/ApiPostsResponse.h; sourceTree = "<group>"; };
+		5989256B1C5CED2A004D2BB0 /* ApiPostsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiPostsResponse.m; path = Native/ApiPostsResponse.m; sourceTree = "<group>"; };
 		599E429E1C5A8B1200653243 /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../deps/djinni/support-lib/build/Debug-iphoneos/libdjinni_objc.a"; sourceTree = "<group>"; };
 		599E429F1C5A8B1200653243 /* libdjinnirest_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinnirest_objc.a; path = "../../build/Debug-iphoneos/libdjinnirest_objc.a"; sourceTree = "<group>"; };
 		59AFE8631C56B4A000034BCF /* DjinniRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjinniRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,10 +98,8 @@
 			children = (
 				598925581C5C283E004D2BB0 /* ThreadLauncher.h */,
 				598925591C5C283E004D2BB0 /* ThreadLauncher.m */,
-				598925621C5CD949004D2BB0 /* ApiResponse.h */,
-				598925631C5CD949004D2BB0 /* ApiResponse.m */,
-				5989256A1C5CED2A004D2BB0 /* PostsIndexResponse.h */,
-				5989256B1C5CED2A004D2BB0 /* PostsIndexResponse.m */,
+				5989256A1C5CED2A004D2BB0 /* ApiPostsResponse.h */,
+				5989256B1C5CED2A004D2BB0 /* ApiPostsResponse.m */,
 				598925661C5CE668004D2BB0 /* Http.h */,
 				598925671C5CE668004D2BB0 /* Http.m */,
 			);
@@ -306,9 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5989256C1C5CED2A004D2BB0 /* PostsIndexResponse.m in Sources */,
+				5989256C1C5CED2A004D2BB0 /* ApiPostsResponse.m in Sources */,
 				59AFE86E1C56B4A000034BCF /* ViewController.m in Sources */,
-				598925641C5CD949004D2BB0 /* ApiResponse.m in Sources */,
 				5989255A1C5C283E004D2BB0 /* ThreadLauncher.m in Sources */,
 				59AFE86B1C56B4A000034BCF /* AppDelegate.m in Sources */,
 				59AFE8681C56B4A000034BCF /* main.mm in Sources */,

@@ -6,9 +6,9 @@ package com.mycompany.djinni_rest;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public abstract class Api {
-    public abstract void doSomething(ApiResponse apiResponse);
+    public abstract void getPostsIndex(ApiPostsResponse apiPostsResponse);
 
-    public abstract void getPostsIndex(PostsIndexResponse postsIndexResponse);
+    public abstract void getPostsShow(long postId, ApiPostsResponse apiPostsResponse);
 
     public static native Api createApi(ThreadLauncher launcher, Http http);
 
@@ -36,19 +36,19 @@ public abstract class Api {
         }
 
         @Override
-        public void doSomething(ApiResponse apiResponse)
+        public void getPostsIndex(ApiPostsResponse apiPostsResponse)
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            native_doSomething(this.nativeRef, apiResponse);
+            native_getPostsIndex(this.nativeRef, apiPostsResponse);
         }
-        private native void native_doSomething(long _nativeRef, ApiResponse apiResponse);
+        private native void native_getPostsIndex(long _nativeRef, ApiPostsResponse apiPostsResponse);
 
         @Override
-        public void getPostsIndex(PostsIndexResponse postsIndexResponse)
+        public void getPostsShow(long postId, ApiPostsResponse apiPostsResponse)
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            native_getPostsIndex(this.nativeRef, postsIndexResponse);
+            native_getPostsShow(this.nativeRef, postId, apiPostsResponse);
         }
-        private native void native_getPostsIndex(long _nativeRef, PostsIndexResponse postsIndexResponse);
+        private native void native_getPostsShow(long _nativeRef, long postId, ApiPostsResponse apiPostsResponse);
     }
 }
