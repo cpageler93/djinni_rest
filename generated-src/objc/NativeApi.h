@@ -3,13 +3,19 @@
 
 #import <Foundation/Foundation.h>
 @class NativeApi;
+@protocol NativeApiResponse;
+@protocol NativeHttp;
+@protocol NativePostsIndexResponse;
 @protocol NativeThreadLauncher;
 
 
 @interface NativeApi : NSObject
 
-+ (nullable NativeApi *)createApi:(nullable id<NativeThreadLauncher>)launcher;
++ (nullable NativeApi *)createApi:(nullable id<NativeThreadLauncher>)launcher
+                             http:(nullable id<NativeHttp>)http;
 
-- (void)doSomething;
+- (void)doSomething:(nullable id<NativeApiResponse>)apiResponse;
+
+- (void)getPostsIndex:(nullable id<NativePostsIndexResponse>)postsIndexResponse;
 
 @end

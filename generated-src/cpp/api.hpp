@@ -7,15 +7,20 @@
 
 namespace djinni_rest_gen {
 
+class ApiResponse;
+class Http;
+class PostsIndexResponse;
 class ThreadLauncher;
 
 class Api {
 public:
     virtual ~Api() {}
 
-    static std::shared_ptr<Api> create_api(const std::shared_ptr<ThreadLauncher> & launcher);
+    static std::shared_ptr<Api> create_api(const std::shared_ptr<ThreadLauncher> & launcher, const std::shared_ptr<Http> & http);
 
-    virtual void do_something() = 0;
+    virtual void do_something(const std::shared_ptr<ApiResponse> & api_response) = 0;
+
+    virtual void get_posts_index(const std::shared_ptr<PostsIndexResponse> & posts_index_response) = 0;
 };
 
 }  // namespace djinni_rest_gen

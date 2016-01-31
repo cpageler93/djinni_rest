@@ -3,6 +3,9 @@
 
 #include "NativeApi.hpp"  // my header
 #include "NativeApi.hpp"
+#include "NativeApiResponse.hpp"
+#include "NativeHttp.hpp"
+#include "NativePostsIndexResponse.hpp"
 #include "NativeThreadLauncher.hpp"
 
 namespace djinni_generated {
@@ -20,21 +23,31 @@ CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jobject JNICALL Java_com_mycompany_djinni_1rest_Api_createApi(JNIEnv* jniEnv, jobject /*this*/, jobject j_launcher)
+CJNIEXPORT jobject JNICALL Java_com_mycompany_djinni_1rest_Api_createApi(JNIEnv* jniEnv, jobject /*this*/, jobject j_launcher, jobject j_http)
 {
     try {
         DJINNI_FUNCTION_PROLOGUE0(jniEnv);
-        auto r = ::djinni_rest_gen::Api::create_api(::djinni_generated::NativeThreadLauncher::toCpp(jniEnv, j_launcher));
+        auto r = ::djinni_rest_gen::Api::create_api(::djinni_generated::NativeThreadLauncher::toCpp(jniEnv, j_launcher),
+                                                    ::djinni_generated::NativeHttp::toCpp(jniEnv, j_http));
         return ::djinni::release(::djinni_generated::NativeApi::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1doSomething(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1doSomething(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_apiResponse)
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
         const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
-        ref->do_something();
+        ref->do_something(::djinni_generated::NativeApiResponse::toCpp(jniEnv, j_apiResponse));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
+}
+
+CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1getPostsIndex(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_postsIndexResponse)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
+        ref->get_posts_index(::djinni_generated::NativePostsIndexResponse::toCpp(jniEnv, j_postsIndexResponse));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 

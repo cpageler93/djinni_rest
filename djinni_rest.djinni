@@ -7,8 +7,47 @@ async_task = interface +c {
     execute();
 }
 
-api = interface +c {
-    static create_api(launcher: thread_launcher): api;
 
-    do_something();
+post_model = record {
+	id: i64;
+	title: string;
+	body: string;
+}
+
+
+
+api_response = interface +o +j {
+	on_success(result: string);
+	on_failure();
+}
+
+posts_index_response = interface +o +j {
+	on_success(result: list<post_model>);
+	on_failure();
+}
+
+
+
+api = interface +c {
+    static create_api(launcher: thread_launcher, http: http): api;
+
+    do_something(api_response: api_response);
+    get_posts_index(posts_index_response: posts_index_response);
+}
+
+
+
+http_method = enum {
+	get;
+	post;
+	patch;
+}
+
+http_callback = interface +c +o +j {
+	on_success(http_code: i16, data: string);
+	on_failure();
+}
+
+http = interface +o +j {
+	send(http_method: http_method, url: string, callback: http_callback);
 }

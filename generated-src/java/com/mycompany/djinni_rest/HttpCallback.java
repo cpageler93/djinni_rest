@@ -5,14 +5,12 @@ package com.mycompany.djinni_rest;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public abstract class Api {
-    public abstract void doSomething(ApiResponse apiResponse);
+public abstract class HttpCallback {
+    public abstract void onSuccess(short httpCode, String data);
 
-    public abstract void getPostsIndex(PostsIndexResponse postsIndexResponse);
+    public abstract void onFailure();
 
-    public static native Api createApi(ThreadLauncher launcher, Http http);
-
-    private static final class CppProxy extends Api
+    private static final class CppProxy extends HttpCallback
     {
         private final long nativeRef;
         private final AtomicBoolean destroyed = new AtomicBoolean(false);
@@ -36,19 +34,19 @@ public abstract class Api {
         }
 
         @Override
-        public void doSomething(ApiResponse apiResponse)
+        public void onSuccess(short httpCode, String data)
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            native_doSomething(this.nativeRef, apiResponse);
+            native_onSuccess(this.nativeRef, httpCode, data);
         }
-        private native void native_doSomething(long _nativeRef, ApiResponse apiResponse);
+        private native void native_onSuccess(long _nativeRef, short httpCode, String data);
 
         @Override
-        public void getPostsIndex(PostsIndexResponse postsIndexResponse)
+        public void onFailure()
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
-            native_getPostsIndex(this.nativeRef, postsIndexResponse);
+            native_onFailure(this.nativeRef);
         }
-        private native void native_getPostsIndex(long _nativeRef, PostsIndexResponse postsIndexResponse);
+        private native void native_onFailure(long _nativeRef);
     }
 }

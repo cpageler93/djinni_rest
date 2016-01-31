@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "NativeApi.h"
-#import "ThreadLauncher.h"
 
 @interface AppDelegate ()
 
@@ -20,11 +18,6 @@
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	ThreadLauncher *threadLauncher = [[ThreadLauncher alloc] init];
-	NativeApi *nativeApi = [NativeApi createApi:threadLauncher];
-	
-	[nativeApi doSomething];
-	
 	return YES;
 }
 
