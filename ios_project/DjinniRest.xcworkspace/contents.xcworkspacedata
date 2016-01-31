@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../build_ios/deps/json11.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../build_ios/deps/djinni/support-lib/support_lib.xcodeproj">
    </FileRef>
    <FileRef

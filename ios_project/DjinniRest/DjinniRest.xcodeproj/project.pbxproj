@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595522131C5EA79700768A53 /* libjson11.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 595522121C5EA79700768A53 /* libjson11.a */; };
 		5989255A1C5C283E004D2BB0 /* ThreadLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925591C5C283E004D2BB0 /* ThreadLauncher.m */; };
 		598925681C5CE668004D2BB0 /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925671C5CE668004D2BB0 /* Http.m */; };
 		5989256C1C5CED2A004D2BB0 /* ApiPostsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989256B1C5CED2A004D2BB0 /* ApiPostsResponse.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		595522121C5EA79700768A53 /* libjson11.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson11.a; path = "../../deps/build/Debug-iphoneos/libjson11.a"; sourceTree = "<group>"; };
 		598925581C5C283E004D2BB0 /* ThreadLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadLauncher.h; path = Native/ThreadLauncher.h; sourceTree = "<group>"; };
 		598925591C5C283E004D2BB0 /* ThreadLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreadLauncher.m; path = Native/ThreadLauncher.m; sourceTree = "<group>"; };
 		598925661C5CE668004D2BB0 /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Http.h; path = Native/Http.h; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595522131C5EA79700768A53 /* libjson11.a in Frameworks */,
 				599E42A01C5A8B1200653243 /* libdjinni_objc.a in Frameworks */,
 				599E42A11C5A8B1200653243 /* libdjinnirest_objc.a in Frameworks */,
 			);
@@ -109,6 +112,7 @@
 		59AFE85A1C56B4A000034BCF = {
 			isa = PBXGroup;
 			children = (
+				595522121C5EA79700768A53 /* libjson11.a */,
 				599E429E1C5A8B1200653243 /* libdjinni_objc.a */,
 				599E429F1C5A8B1200653243 /* libdjinnirest_objc.a */,
 				59AFE8651C56B4A000034BCF /* DjinniRest */,

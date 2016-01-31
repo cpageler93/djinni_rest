@@ -2,6 +2,7 @@
 
 #include "async_task_impl.hpp"
 #include "http_callback_impl.hpp"
+#include <json11/json11.hpp>
 
 #include <iostream>
 #include <chrono>
@@ -36,11 +37,27 @@ void djinni_rest::Api::get_posts_index(
 		// create background task to parse json
 		auto json_parse_task = std::make_shared<AsyncTaskImpl>([http_code, data, api_posts_response](){
 			
-			std::cout << "handle " << std::to_string(http_code) << std::endl;
-			std::cout << "Parse " << data << std::endl;
 			
-			auto v = std::vector<djinni_rest_gen::PostModel>();
-			api_posts_response->on_index_success(v);
+			std::string error;
+			auto json_response = json11::Json::parse(data, error);
+			if (!error.empty()) {
+				api_posts_response->on_failure();
+			} else {
+				if (json_response.is_array()) {
+					auto v = std::vector<djinni_rest_gen::PostModel>();
+					for (const auto& item : json_response.array_items()) {
+						auto p = djinni_rest_gen::PostModel(
+															item["id"].number_value(),
+															item["title"].string_value(),
+															item["body"].string_value()
+															);
+						v.emplace_back(p);
+					}
+					api_posts_response->on_index_success(v);
+				} else {
+					api_posts_response->on_failure();
+				}
+			}
 			
 		});
 		thread_launcher->start_thread("Parse JSON Task", json_parse_task);
@@ -68,11 +85,22 @@ void djinni_rest::Api::get_posts_show(
 		// create background task to parse json
 		auto json_parse_task = std::make_shared<AsyncTaskImpl>([http_code, data, api_posts_response](){
 			
-			std::cout << "handle " << std::to_string(http_code) << std::endl;
-			std::cout << "Parse " << data << std::endl;
-			
-			auto post_model = djinni_rest_gen::PostModel(1, "title", "body");
-			api_posts_response->on_show_success(post_model);
+			std::string error;
+			auto json_response = json11::Json::parse(data, error);
+			if (!error.empty()) {
+				api_posts_response->on_failure();
+			} else {
+				if (json_response.is_object()) {
+					auto p = djinni_rest_gen::PostModel(
+														json_response["id"].number_value(),
+														json_response["title"].string_value(),
+														json_response["body"].string_value()
+														);
+					api_posts_response->on_show_success(p);
+				} else {
+					api_posts_response->on_failure();
+				}
+			}
 			
 		});
 		thread_launcher->start_thread("Parse JSON Task", json_parse_task);
