@@ -8,7 +8,7 @@ java_out="$base_dir/generated-src/java/com/mycompany/djinni_rest"
 java_package="com.mycompany.djinni_rest"
 namespace="djinni_rest_gen"
 objc_prefix="Native"
-djinni_file="djinni_rest.djinni"
+djinni_file="djinni/djinni_rest.djinni"
 
 deps/djinni/src/run \
    --java-out $java_out \

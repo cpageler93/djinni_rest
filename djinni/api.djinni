@@ -1,19 +1,8 @@
-thread_launcher = interface +o +j {
-    start_thread(name: string, run_fn: async_task);
-}
-
-async_task = interface +c {
-    execute();
-}
-
-
 post_model = record {
 	id: i64;
 	title: string;
 	body: string;
 }
-
-
 
 api_posts_response = interface +o +j {
 	on_index_success(result: list<post_model>);
@@ -21,29 +10,9 @@ api_posts_response = interface +o +j {
 	on_failure();
 }
 
-
-
 api = interface +c {
     static create_api(launcher: thread_launcher, http: http): api;
-    static create(): api;
 
     get_posts_index(api_posts_response: api_posts_response);
     get_posts_show(post_id: i64, api_posts_response: api_posts_response);
-}
-
-
-
-http_method = enum {
-	get;
-	post;
-	patch;
-}
-
-http_callback = interface +c +o +j {
-	on_success(http_code: i16, data: string);
-	on_failure();
-}
-
-http = interface +o +j {
-	send(http_method: http_method, url: string, callback: http_callback);
 }

@@ -1,4 +1,4 @@
-./build_ios/libdjinnirest.xcodeproj: libdjinnirest.gyp ./deps/djinni/support-lib/support_lib.gyp djinni_rest.djinni
+./build_ios/libdjinnirest.xcodeproj: libdjinnirest.gyp ./deps/djinni/support-lib/support_lib.gyp djinni/djinni_rest.djinni
 	sh ./run_djinni.sh
 	deps/gyp/gyp --depth=. -f xcode -DOS=ios --generator-output ./build_ios -Ideps/djinni/common.gypi ./libdjinnirest.gyp
 
@@ -9,7 +9,7 @@ ios: ./build_ios/libdjinnirest.xcodeproj
 	-sdk iphoneos
 
 # ANDROID
-GypAndroid.mk: libdjinnirest.gyp ./deps/djinni/support-lib/support_lib.gyp djinni_rest.djinni
+GypAndroid.mk: libdjinnirest.gyp ./deps/djinni/support-lib/support_lib.gyp djinni/djinni_rest.djinni
 	sh ./run_djinni.sh
 	ANDROID_BUILD_TOP=$(shell dirname `which ndk-build`) deps/gyp/gyp --depth=. -f android -DOS=android -Ideps/djinni/common.gypi ./libdjinnirest.gyp --root-target=libdjinnirest_jni
 

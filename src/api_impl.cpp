@@ -25,10 +25,6 @@ djinni_rest::Api::Api(
 	this->m_http = http;
 }
 
-std::shared_ptr<djinni_rest_gen::Api> djinni_rest_gen::Api::create() {
-  return std::make_shared<djinni_rest::Api>(nullptr, nullptr);
-}
-
 void djinni_rest::Api::get_posts_index(
 	const std::shared_ptr<djinni_rest_gen::ApiPostsResponse> & api_posts_response
 ) {

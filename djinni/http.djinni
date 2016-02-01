@@ -1,0 +1,14 @@
+http_method = enum {
+	get;
+	post;
+	patch;
+}
+
+http_callback = interface +c +o +j {
+	on_success(http_code: i16, data: string);
+	on_failure();
+}
+
+http = interface +o +j {
+	send(http_method: http_method, url: string, callback: http_callback);
+}

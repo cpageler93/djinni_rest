@@ -23,35 +23,47 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		216BC02D0ACF551CF53D53BC /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
 		21CD292298096CA4A12C96D8 /* NativeAsyncTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */; };
 		24BF7CA08DC03EDEA5E02AD4 /* NativePostModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68258BC5F2085D7B33A233E /* NativePostModel.mm */; };
 		2BBABBC703084A016018D32C /* NativeAsyncTask+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */; };
+		2DD74E5036E0AB1CBD0FD3AD /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
 		37F0D8BF4D96A4A52E10515B /* NativeHttpCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC3ACA29B09A02AA7C1069C7 /* NativeHttpCallback.cpp */; };
+		49F4BABF821EF0B3D66F83A3 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4256F174DA6AC961B56C466C /* utils.cpp */; };
 		4DBD551BA2C0C1A1A5D758C0 /* NativeThreadLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */; };
-		504BD5CBDB9970D42019DF80 /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
 		5320C35A14BB6F6E2531DCBD /* NativePostModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0471C175AF40E84728B3094E /* NativePostModel.cpp */; };
-		82F3EBDC20C5EA7217621C71 /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
+		7C550BDB1E9FABFB0C539ED9 /* libdjinnirest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 818386456C11E6C086652551 /* libdjinnirest.a */; };
+		7C8790AFFFD4CC8FAA825899 /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
 		859E0410905CF3CB790E3585 /* NativeHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 557E4ECBEC66A03F62557E95 /* NativeHttp.cpp */; };
-		8A1E6A1153024F31D0DE078B /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
-		8BEFF14FD984B2E1315BD686 /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
 		A00462E578DACF24D43D12A8 /* djinni_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66C1133B7E181CA277806AF5 /* djinni_main.cpp */; };
-		A3E0C96BCCD2966517612503 /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
-		A5788EBB292C2DA0A7140F47 /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
+		A2362B320D2DA760F73C6EBE /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
 		A8C75636577FEBEBB72EC563 /* NativeApiPostsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F3BA8F9D744349A62A4F48C /* NativeApiPostsResponse.cpp */; };
-		B07710F9BC822853ADD6B08D /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
+		AA65E4439F5B7A2648A20497 /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
+		AB46F4FA75E9ED86B73CAEA4 /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
+		BB6BF7BCA69C78AED16B3366 /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
 		BC59162EBCE5B871F4E1F348 /* NativeApiPostsResponse+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 410EA9415F801F3DE5F721B7 /* NativeApiPostsResponse+Private.mm */; };
 		C42A968C226E35AF0653F260 /* NativeHttp+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5521AF8BC97242B62BEF916D /* NativeHttp+Private.mm */; };
+		C68BEDF80B7F1B8191ADA21B /* libjson11.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D233306E21138D7CD17451 /* libjson11.a */; };
 		CC0C2B6EB9E44EE60ACF0A0E /* libdjinni_jni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B489D6C8ECECCBA93801316 /* libdjinni_jni.a */; };
-		CE2E68870FA041B974665279 /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
+		CE9344A46DDFE95825E2CB50 /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
 		D2DF0B938CD1CB603F792E3D /* NativeApi+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 684F59357A0F0650221AE462 /* NativeApi+Private.mm */; };
+		DBE0CB9A53EEF487D5D79432 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4256F174DA6AC961B56C466C /* utils.cpp */; };
+		DDFC2D4DF5A6B3A374129C3A /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
 		DFEC339A71DA1BE025A48AEE /* NativeHttpCallback+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F93C940A1A43030A3BD84795 /* NativeHttpCallback+Private.mm */; };
 		E147B3512B3C15D2AFBB47AD /* NativePostModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2DEF35FDED194E68F78D250 /* NativePostModel+Private.mm */; };
-		F1F37DB15C27C611072D7145 /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
+		E9F5F9ADBCA4AC00C6DD8531 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4256F174DA6AC961B56C466C /* utils.cpp */; };
 		F4245B4459101C0288385293 /* NativeThreadLauncher+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */; };
 		F617D0EC31D33454A32C249C /* NativeApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		174044A7CFF89C26A4D6ED82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C7044DCC67B061A61DDF56 /* json11.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 628B5EEE1406717033D202E7;
+			remoteInfo = json11;
+		};
 		1F67E59BA9534772905C18EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9E21D62DC6A8C69F8B4E1596 /* support_lib.xcodeproj */;
@@ -94,6 +106,20 @@
 			remoteGlobalIDString = D7EA424C6D917191A422D1D9;
 			remoteInfo = libdjinnirest_objc;
 		};
+		C8C9EEAEF1FFF210C7CDF246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3DCDCACEF9492767AA694C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504B3B219ADCB890C6F9B0BD;
+			remoteInfo = libdjinnirest;
+		};
+		E756F18BCB2AD81E394B4659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C7044DCC67B061A61DDF56 /* json11.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBDF0630DFB409BA3B3C55F4;
+			remoteInfo = json11;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +135,7 @@
 		3BF2CF8163D9232A3A4F3D42 /* thread_launcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = thread_launcher.hpp; sourceTree = "<group>"; };
 		3EF3C60DCA9C860A9E8A418E /* api_posts_response.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = api_posts_response.hpp; sourceTree = "<group>"; };
 		410EA9415F801F3DE5F721B7 /* NativeApiPostsResponse+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeApiPostsResponse+Private.mm"; sourceTree = "<group>"; };
+		4256F174DA6AC961B56C466C /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
 		49A5E1816275EFC7DA1C4F67 /* NativeApiPostsResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeApiPostsResponse.h; sourceTree = "<group>"; };
 		4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeThreadLauncher.cpp; sourceTree = "<group>"; };
 		5225935928EB57C8DDC3E836 /* http.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = http.hpp; sourceTree = "<group>"; };
@@ -123,6 +150,7 @@
 		7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_callback_impl.cpp; sourceTree = "<group>"; };
 		7FE7F18A44A73D9A331DD0BF /* NativeApi+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeApi+Private.h"; sourceTree = "<group>"; };
 		818386456C11E6C086652551 /* libdjinnirest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdjinnirest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		852E0350D12E69F25389BDD1 /* std_util.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = std_util.hpp; sourceTree = "<group>"; };
 		8D3265CA4FE47910461B4545 /* http_callback_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = http_callback_impl.hpp; sourceTree = "<group>"; };
 		9E21D62DC6A8C69F8B4E1596 /* support_lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = support_lib.xcodeproj; path = "build_ios/deps/djinni/support-lib/support_lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		9E3D64392F531389303042AF /* api.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = api.hpp; sourceTree = "<group>"; };
@@ -132,6 +160,7 @@
 		AA743765723B7C1526DE2A8F /* async_task_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = async_task_impl.cpp; sourceTree = "<group>"; };
 		B02B08615C3BCC129A496892 /* NativeHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHttp.h; sourceTree = "<group>"; };
 		B4717B176E54A7BC4C5A5BD7 /* NativeThreadLauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeThreadLauncher.h; sourceTree = "<group>"; };
+		B5C7044DCC67B061A61DDF56 /* json11.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = json11.xcodeproj; path = build_ios/deps/json11.xcodeproj; sourceTree = SOURCE_ROOT; };
 		C6C2CA1FC91FF2355479E32B /* NativeHttpCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHttpCallback.h; sourceTree = "<group>"; };
 		CBE1B95970B04E6ED9719E0D /* api_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = api_impl.hpp; sourceTree = "<group>"; };
 		CEDDFF93C9050512344B0D49 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = deps/djinni/common.gypi; sourceTree = "<group>"; };
@@ -156,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC0C2B6EB9E44EE60ACF0A0E /* libdjinni_jni.a in Frameworks */,
+				7C550BDB1E9FABFB0C539ED9 /* libdjinnirest.a in Frameworks */,
+				C68BEDF80B7F1B8191ADA21B /* libjson11.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,19 +231,6 @@
 			path = jni;
 			sourceTree = "<group>";
 		};
-		4EF8A7950C40A59A357A9DE2 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				23B9EF9BA1EE764148342449 /* api_impl.cpp */,
-				CBE1B95970B04E6ED9719E0D /* api_impl.hpp */,
-				AA743765723B7C1526DE2A8F /* async_task_impl.cpp */,
-				DBD97437EC621854492F60B8 /* async_task_impl.hpp */,
-				7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */,
-				8D3265CA4FE47910461B4545 /* http_callback_impl.hpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		5EDBC37D9DE53C342BD5D095 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,22 +241,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		770EB51131E598A04D25373D /* Projects */ = {
-			isa = PBXGroup;
-			children = (
-				9E21D62DC6A8C69F8B4E1596 /* support_lib.xcodeproj */,
-			);
-			name = Projects;
-			sourceTree = "<group>";
-		};
 		8575F71A5900C991680245C6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				E3F200F1E0D1CF4B6107A559 /* deps/djinni/support-lib/jni */,
 				01C171CC53B05B4EA599D064 /* generated-src */,
-				4EF8A7950C40A59A357A9DE2 /* src */,
+				D589DCAD01D8FA5F611210C5 /* src */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		A6618511905750A834B5B0E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D233306E21138D7CD17451 /* libjson11.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B9076ED4306A6AD10D2013F1 /* objc */ = {
@@ -280,14 +298,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C771C262993B6F1057FDB1D9 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				B5C7044DCC67B061A61DDF56 /* json11.xcodeproj */,
+				9E21D62DC6A8C69F8B4E1596 /* support_lib.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
 		CF118571539979E5C93F6399 = {
 			isa = PBXGroup;
 			children = (
 				8575F71A5900C991680245C6 /* Source */,
-				770EB51131E598A04D25373D /* Projects */,
+				C771C262993B6F1057FDB1D9 /* Projects */,
 				5EDBC37D9DE53C342BD5D095 /* Products */,
 				E1D0E50ABE63A11BF9904756 /* Build */,
 			);
+			sourceTree = "<group>";
+		};
+		D589DCAD01D8FA5F611210C5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				23B9EF9BA1EE764148342449 /* api_impl.cpp */,
+				CBE1B95970B04E6ED9719E0D /* api_impl.hpp */,
+				AA743765723B7C1526DE2A8F /* async_task_impl.cpp */,
+				DBD97437EC621854492F60B8 /* async_task_impl.hpp */,
+				7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */,
+				8D3265CA4FE47910461B4545 /* http_callback_impl.hpp */,
+				852E0350D12E69F25389BDD1 /* std_util.hpp */,
+				4256F174DA6AC961B56C466C /* utils.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		D8E4C312BDD891FE9C59CDF2 /* cpp */ = {
@@ -336,6 +378,8 @@
 			);
 			dependencies = (
 				D7C768CF6DFC2F36F576326A /* PBXTargetDependency */,
+				04ABC0BF58C0A7793D629F54 /* PBXTargetDependency */,
+				8A6F58D9163F2D924594FF64 /* PBXTargetDependency */,
 			);
 			name = libdjinnirest_jni;
 			productName = djinnirest_jni;
@@ -389,6 +433,10 @@
 			projectDirPath = ..;
 			projectReferences = (
 				{
+					ProductGroup = A6618511905750A834B5B0E7 /* Products */;
+					ProjectRef = B5C7044DCC67B061A61DDF56 /* json11.xcodeproj */;
+				},
+				{
 					ProductGroup = BB9917C8460A7AB8137EC596 /* Products */;
 					ProjectRef = 9E21D62DC6A8C69F8B4E1596 /* support_lib.xcodeproj */;
 				},
@@ -411,6 +459,13 @@
 			remoteRef = 8C88CB5763DCA8B906972ACE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		56D233306E21138D7CD17451 /* libjson11.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjson11.a;
+			remoteRef = E756F18BCB2AD81E394B4659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		6CBEBE0D6A98D61EFCEA6874 /* libdjinni_objc.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -425,9 +480,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07710F9BC822853ADD6B08D /* api_impl.cpp in Sources */,
-				A3E0C96BCCD2966517612503 /* async_task_impl.cpp in Sources */,
-				F1F37DB15C27C611072D7145 /* http_callback_impl.cpp in Sources */,
+				AA65E4439F5B7A2648A20497 /* api_impl.cpp in Sources */,
+				AB46F4FA75E9ED86B73CAEA4 /* async_task_impl.cpp in Sources */,
+				216BC02D0ACF551CF53D53BC /* http_callback_impl.cpp in Sources */,
+				DBE0CB9A53EEF487D5D79432 /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,9 +499,10 @@
 				37F0D8BF4D96A4A52E10515B /* NativeHttpCallback.cpp in Sources */,
 				5320C35A14BB6F6E2531DCBD /* NativePostModel.cpp in Sources */,
 				4DBD551BA2C0C1A1A5D758C0 /* NativeThreadLauncher.cpp in Sources */,
-				CE2E68870FA041B974665279 /* api_impl.cpp in Sources */,
-				A5788EBB292C2DA0A7140F47 /* async_task_impl.cpp in Sources */,
-				8A1E6A1153024F31D0DE078B /* http_callback_impl.cpp in Sources */,
+				DDFC2D4DF5A6B3A374129C3A /* api_impl.cpp in Sources */,
+				A2362B320D2DA760F73C6EBE /* async_task_impl.cpp in Sources */,
+				BB6BF7BCA69C78AED16B3366 /* http_callback_impl.cpp in Sources */,
+				49F4BABF821EF0B3D66F83A3 /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,15 +518,26 @@
 				E147B3512B3C15D2AFBB47AD /* NativePostModel+Private.mm in Sources */,
 				24BF7CA08DC03EDEA5E02AD4 /* NativePostModel.mm in Sources */,
 				F4245B4459101C0288385293 /* NativeThreadLauncher+Private.mm in Sources */,
-				82F3EBDC20C5EA7217621C71 /* api_impl.cpp in Sources */,
-				8BEFF14FD984B2E1315BD686 /* async_task_impl.cpp in Sources */,
-				504BD5CBDB9970D42019DF80 /* http_callback_impl.cpp in Sources */,
+				CE9344A46DDFE95825E2CB50 /* api_impl.cpp in Sources */,
+				2DD74E5036E0AB1CBD0FD3AD /* async_task_impl.cpp in Sources */,
+				7C8790AFFFD4CC8FAA825899 /* http_callback_impl.cpp in Sources */,
+				E9F5F9ADBCA4AC00C6DD8531 /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		04ABC0BF58C0A7793D629F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504B3B219ADCB890C6F9B0BD /* libdjinnirest */;
+			targetProxy = C8C9EEAEF1FFF210C7CDF246 /* PBXContainerItemProxy */;
+		};
+		8A6F58D9163F2D924594FF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = json11;
+			targetProxy = 174044A7CFF89C26A4D6ED82 /* PBXContainerItemProxy */;
+		};
 		BEDDB050161689075975313E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D7EA424C6D917191A422D1D9 /* libdjinnirest_objc */;
@@ -506,6 +574,7 @@
 					"generated-src/jni",
 					"generated-src/cpp",
 					src,
+					deps,
 					"deps/djinni/support-lib/jni",
 				);
 				ONLY_ACTIVE_ARCH = YES;
@@ -564,6 +633,7 @@
 					"generated-src/jni",
 					"generated-src/cpp",
 					src,
+					deps,
 					"deps/djinni/support-lib/jni",
 				);
 				OTHER_CFLAGS = "-Wall";
