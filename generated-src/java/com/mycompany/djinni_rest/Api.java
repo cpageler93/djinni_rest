@@ -12,6 +12,8 @@ public abstract class Api {
 
     public abstract boolean isPostValid(PostModel postModel);
 
+    public abstract PostModel modifyPost(PostModel postModel);
+
     public abstract void getPhotosIndex(ApiPhotosResponse apiPhotosResponse);
 
     public abstract void getPhotosShow(long photoId, ApiPhotosResponse apiPhotosResponse);
@@ -64,6 +66,14 @@ public abstract class Api {
             return native_isPostValid(this.nativeRef, postModel);
         }
         private native boolean native_isPostValid(long _nativeRef, PostModel postModel);
+
+        @Override
+        public PostModel modifyPost(PostModel postModel)
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            return native_modifyPost(this.nativeRef, postModel);
+        }
+        private native PostModel native_modifyPost(long _nativeRef, PostModel postModel);
 
         @Override
         public void getPhotosIndex(ApiPhotosResponse apiPhotosResponse)

@@ -73,4 +73,9 @@
 	return [self.nativeApi isPostValid:postModel];
 }
 
+- (NativePostModel *)modifyPost:(NativePostModel *)postModel
+{
+	return [self.nativeApi modifyPost:postModel];
+}
+
 @end

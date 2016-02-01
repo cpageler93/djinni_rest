@@ -22,6 +22,8 @@
 
 - (BOOL)isPostValid:(nonnull NativePostModel *)postModel;
 
+- (nonnull NativePostModel *)modifyPost:(nonnull NativePostModel *)postModel;
+
 - (void)getPhotosIndex:(nullable id<NativeApiPhotosResponse>)apiPhotosResponse;
 
 - (void)getPhotosShow:(int64_t)photoId

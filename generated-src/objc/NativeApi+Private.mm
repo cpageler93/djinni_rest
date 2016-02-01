@@ -65,6 +65,13 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
+- (nonnull NativePostModel *)modifyPost:(nonnull NativePostModel *)postModel {
+    try {
+        auto r = _cppRefHandle.get()->modify_post(::djinni_generated::PostModel::toCpp(postModel));
+        return ::djinni_generated::PostModel::fromCpp(r);
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
 - (void)getPhotosIndex:(nullable id<NativeApiPhotosResponse>)apiPhotosResponse {
     try {
         _cppRefHandle.get()->get_photos_index(::djinni_generated::ApiPhotosResponse::toCpp(apiPhotosResponse));

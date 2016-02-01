@@ -23,4 +23,6 @@
 
 - (BOOL)isPostValid:(NativePostModel *)postModel;
 
+- (NativePostModel *)modifyPost:(NativePostModel *)postModel;
+
 @end

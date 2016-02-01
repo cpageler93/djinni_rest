@@ -26,6 +26,8 @@ public:
 
     virtual bool is_post_valid(const PostModel & post_model) = 0;
 
+    virtual PostModel modify_post(const PostModel & post_model) = 0;
+
     virtual void get_photos_index(const std::shared_ptr<ApiPhotosResponse> & api_photos_response) = 0;
 
     virtual void get_photos_show(int64_t photo_id, const std::shared_ptr<ApiPhotosResponse> & api_photos_response) = 0;

@@ -36,7 +36,10 @@
 													   title:@"Title"
 														body:@"Body"];
 	BOOL isPostValid = [[DjinniRestService sharedInstance] isPostValid:post];
-	NSLog(@"Post is valid: %d", isPostValid);
+	NSLog(@"Post %@ is valid: %d", post, isPostValid);
+	
+	NativePostModel *modifiedPost = [[DjinniRestService sharedInstance] modifyPost:post];
+	NSLog(@"Modified Post: %@", modifiedPost);
 	
 }
 

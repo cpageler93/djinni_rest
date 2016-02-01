@@ -114,6 +114,15 @@ bool djinni_rest::Api::is_post_valid(const djinni_rest_gen::PostModel & post_mod
 	return post_model.title.length() > 0 && post_model.body.length() > 0;
 }
 
+djinni_rest_gen::PostModel djinni_rest::Api::modify_post(const djinni_rest_gen::PostModel & post_model)
+{
+	return djinni_rest_gen::PostModel(
+									  post_model.id,
+									  "Modified: " + post_model.title,
+									  "Modified: " + post_model.body
+									  );
+}
+
 djinni_rest_gen::PostModel djinni_rest::Api::post_model_from_json_object(json11::Json json)
 {
 	return djinni_rest_gen::PostModel(
