@@ -33,6 +33,15 @@ CJNIEXPORT jobject JNICALL Java_com_mycompany_djinni_1rest_Api_createApi(JNIEnv*
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
+CJNIEXPORT jobject JNICALL Java_com_mycompany_djinni_1rest_Api_create(JNIEnv* jniEnv, jobject /*this*/)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE0(jniEnv);
+        auto r = ::djinni_rest_gen::Api::create();
+        return ::djinni::release(::djinni_generated::NativeApi::fromCpp(jniEnv, r));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
+}
+
 CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1getPostsIndex(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_apiPostsResponse)
 {
     try {

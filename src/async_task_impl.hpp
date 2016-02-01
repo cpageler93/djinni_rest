@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include <functional>
-#include "async_task.hpp"
+#include "../generated-src/cpp/async_task.hpp"
 
 namespace djinni_rest {
 	class AsyncTaskImpl final : public djinni_rest_gen::AsyncTask {

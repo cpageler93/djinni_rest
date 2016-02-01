@@ -12,6 +12,8 @@ public abstract class Api {
 
     public static native Api createApi(ThreadLauncher launcher, Http http);
 
+    public static native Api create();
+
     private static final class CppProxy extends Api
     {
         private final long nativeRef;

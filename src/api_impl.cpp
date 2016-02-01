@@ -4,6 +4,8 @@
 #include "http_callback_impl.hpp"
 #include <json11/json11.hpp>
 
+#include "std_util.hpp"
+
 #include <iostream>
 #include <chrono>
 #include <thread>
@@ -23,12 +25,16 @@ djinni_rest::Api::Api(
 	this->m_http = http;
 }
 
+std::shared_ptr<djinni_rest_gen::Api> djinni_rest_gen::Api::create() {
+  return std::make_shared<djinni_rest::Api>(nullptr, nullptr);
+}
+
 void djinni_rest::Api::get_posts_index(
 	const std::shared_ptr<djinni_rest_gen::ApiPostsResponse> & api_posts_response
 ) {
 	// copy local attributes
 	auto thread_launcher = this->m_thread_launcher;
-	
+
 	// make http request and assign callback
 	auto http_callback = std::make_shared<HttpCallbackImpl>(
 		[thread_launcher, api_posts_response]
@@ -36,8 +42,8 @@ void djinni_rest::Api::get_posts_index(
 	{
 		// create background task to parse json
 		auto json_parse_task = std::make_shared<AsyncTaskImpl>([http_code, data, api_posts_response](){
-			
-			
+
+
 			std::string error;
 			auto json_response = json11::Json::parse(data, error);
 			if (!error.empty()) {
@@ -58,7 +64,7 @@ void djinni_rest::Api::get_posts_index(
 					api_posts_response->on_failure();
 				}
 			}
-			
+
 		});
 		thread_launcher->start_thread("Parse JSON Task", json_parse_task);
 	},
@@ -76,7 +82,7 @@ void djinni_rest::Api::get_posts_show(
 ) {
 	// copy local attributes
 	auto thread_launcher = this->m_thread_launcher;
-	
+
 	// make http request and assign callback
 	auto http_callback = std::make_shared<HttpCallbackImpl>(
 		[thread_launcher, api_posts_response]
@@ -84,7 +90,7 @@ void djinni_rest::Api::get_posts_show(
 	{
 		// create background task to parse json
 		auto json_parse_task = std::make_shared<AsyncTaskImpl>([http_code, data, api_posts_response](){
-			
+
 			std::string error;
 			auto json_response = json11::Json::parse(data, error);
 			if (!error.empty()) {
@@ -101,7 +107,7 @@ void djinni_rest::Api::get_posts_show(
 					api_posts_response->on_failure();
 				}
 			}
-			
+
 		});
 		thread_launcher->start_thread("Parse JSON Task", json_parse_task);
 	},
@@ -110,7 +116,7 @@ void djinni_rest::Api::get_posts_show(
 	{
 		api_posts_response->on_failure();
 	});
-	auto url = "http://jsonplaceholder.typicode.com/posts/" + std::to_string(post_id);
+	auto url = "http://jsonplaceholder.typicode.com/posts/" + std_patch::to_string(post_id);
 	this->m_http->send(djinni_rest_gen::HttpMethod::GET, url, http_callback);
 }
 

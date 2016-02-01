@@ -13,6 +13,8 @@
 + (nullable NativeApi *)createApi:(nullable id<NativeThreadLauncher>)launcher
                              http:(nullable id<NativeHttp>)http;
 
++ (nullable NativeApi *)create;
+
 - (void)getPostsIndex:(nullable id<NativeApiPostsResponse>)apiPostsResponse;
 
 - (void)getPostsShow:(int64_t)postId

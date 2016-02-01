@@ -25,6 +25,7 @@ api_posts_response = interface +o +j {
 
 api = interface +c {
     static create_api(launcher: thread_launcher, http: http): api;
+    static create(): api;
 
     get_posts_index(api_posts_response: api_posts_response);
     get_posts_show(post_id: i64, api_posts_response: api_posts_response);

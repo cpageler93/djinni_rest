@@ -42,6 +42,13 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
++ (nullable NativeApi *)create {
+    try {
+        auto r = ::djinni_rest_gen::Api::create();
+        return ::djinni_generated::Api::fromCpp(r);
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
 - (void)getPostsIndex:(nullable id<NativeApiPostsResponse>)apiPostsResponse {
     try {
         _cppRefHandle.get()->get_posts_index(::djinni_generated::ApiPostsResponse::toCpp(apiPostsResponse));

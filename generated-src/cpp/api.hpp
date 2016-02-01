@@ -18,6 +18,8 @@ public:
 
     static std::shared_ptr<Api> create_api(const std::shared_ptr<ThreadLauncher> & launcher, const std::shared_ptr<Http> & http);
 
+    static std::shared_ptr<Api> create();
+
     virtual void get_posts_index(const std::shared_ptr<ApiPostsResponse> & api_posts_response) = 0;
 
     virtual void get_posts_show(int64_t post_id, const std::shared_ptr<ApiPostsResponse> & api_posts_response) = 0;

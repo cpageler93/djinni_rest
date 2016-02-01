@@ -26,6 +26,7 @@
             "type": "shared_library",
             "dependencies": [
               "./deps/djinni/support-lib/support_lib.gyp:djinni_jni",
+              "libdjinnirest"
             ],
             "ldflags": [ "-llog", "-Wl,--build-id,--gc-sections,--exclude-libs,ALL" ],
             "sources": [

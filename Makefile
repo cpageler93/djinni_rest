@@ -7,3 +7,13 @@ ios: ./build_ios/libdjinnirest.xcodeproj
 	-scheme DjinniRest \
 	-configuration 'Debug' \
 	-sdk iphoneos
+
+# ANDROID
+GypAndroid.mk: libdjinnirest.gyp ./deps/djinni/support-lib/support_lib.gyp djinni_rest.djinni
+	sh ./run_djinni.sh
+	ANDROID_BUILD_TOP=$(shell dirname `which ndk-build`) deps/gyp/gyp --depth=. -f android -DOS=android -Ideps/djinni/common.gypi ./libdjinnirest.gyp --root-target=libdjinnirest_jni
+
+android: GypAndroid.mk
+	cd android_project/DjinniRest/ && ./gradlew app:assembleDebug
+	@echo "Apks produced at:"
+	@python deps/djinni/example/glob.py ./ '*.apk'
