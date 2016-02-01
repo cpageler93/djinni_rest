@@ -4,6 +4,7 @@
 #include "NativeApi.hpp"  // my header
 #include "Marshal.hpp"
 #include "NativeApi.hpp"
+#include "NativeApiPhotosResponse.hpp"
 #include "NativeApiPostsResponse.hpp"
 #include "NativeHttp.hpp"
 #include "NativeThreadLauncher.hpp"
@@ -49,6 +50,25 @@ CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native
         const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
         ref->get_posts_show(::djinni::I64::toCpp(jniEnv, j_postId),
                             ::djinni_generated::NativeApiPostsResponse::toCpp(jniEnv, j_apiPostsResponse));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
+}
+
+CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1getPhotosIndex(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_apiPhotosResponse)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
+        ref->get_photos_index(::djinni_generated::NativeApiPhotosResponse::toCpp(jniEnv, j_apiPhotosResponse));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
+}
+
+CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1getPhotosShow(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jlong j_photoId, jobject j_apiPhotosResponse)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
+        ref->get_photos_show(::djinni::I64::toCpp(jniEnv, j_photoId),
+                             ::djinni_generated::NativeApiPhotosResponse::toCpp(jniEnv, j_apiPhotosResponse));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 

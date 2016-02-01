@@ -10,9 +10,27 @@ api_posts_response = interface +o +j {
 	on_failure();
 }
 
+photo_model = record {
+	id: i64;
+	album_id: i64;
+	title: string;
+	url: string;
+	thumbnail_url: string;
+}
+
+api_photos_response = interface +o +j {
+	on_index_success(result: list<photo_model>);
+	on_show_success(result: photo_model);
+	on_failure();
+}
+
+
 api = interface +c {
     static create_api(launcher: thread_launcher, http: http): api;
 
     get_posts_index(api_posts_response: api_posts_response);
     get_posts_show(post_id: i64, api_posts_response: api_posts_response);
+
+    get_photos_index(api_photos_response: api_photos_response);
+    get_photos_show(photo_id: i64, api_photos_response: api_photos_response);
 }

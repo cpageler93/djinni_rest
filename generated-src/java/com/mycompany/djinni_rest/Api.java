@@ -10,6 +10,10 @@ public abstract class Api {
 
     public abstract void getPostsShow(long postId, ApiPostsResponse apiPostsResponse);
 
+    public abstract void getPhotosIndex(ApiPhotosResponse apiPhotosResponse);
+
+    public abstract void getPhotosShow(long photoId, ApiPhotosResponse apiPhotosResponse);
+
     public static native Api createApi(ThreadLauncher launcher, Http http);
 
     private static final class CppProxy extends Api
@@ -50,5 +54,21 @@ public abstract class Api {
             native_getPostsShow(this.nativeRef, postId, apiPostsResponse);
         }
         private native void native_getPostsShow(long _nativeRef, long postId, ApiPostsResponse apiPostsResponse);
+
+        @Override
+        public void getPhotosIndex(ApiPhotosResponse apiPhotosResponse)
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_getPhotosIndex(this.nativeRef, apiPhotosResponse);
+        }
+        private native void native_getPhotosIndex(long _nativeRef, ApiPhotosResponse apiPhotosResponse);
+
+        @Override
+        public void getPhotosShow(long photoId, ApiPhotosResponse apiPhotosResponse)
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            native_getPhotosShow(this.nativeRef, photoId, apiPhotosResponse);
+        }
+        private native void native_getPhotosShow(long _nativeRef, long photoId, ApiPhotosResponse apiPhotosResponse);
     }
 }

@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NativeApi.h"
-#import "ThreadLauncher.h"
-#import "ApiPostsResponse.h"
-#import "Http.h"
+#import "DjinniRestService.h"
 
 @interface ViewController ()
 
@@ -22,36 +19,19 @@
 {
 	[super viewDidLoad];
 	
-	ThreadLauncher *threadLauncher = [[ThreadLauncher alloc] init];
-	Http *http = [[Http alloc] init];
+	[[DjinniRestService sharedInstance] getPhotosIndex:^(NSArray<NativePhotoModel *> *photos) {
+		
+		[photos enumerateObjectsUsingBlock:^(NativePhotoModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+			if (idx == 0) {
+				[[DjinniRestService sharedInstance] getImageFromUrl:[NSURL URLWithString:obj.url] completion:^(UIImage *image) {
+					NSLog(@"show image: %@", image);
+				}];
+			} else {
+				*stop = YES;
+			}
+		}];
+	}];
 	
-	NativeApi *nativeApi = [NativeApi createApi:threadLauncher
-										   http:http];
-	
-	[nativeApi getPostsIndex:[ApiPostsResponse indexResponseOnSuccess:^(NSArray<NativePostModel *> *posts) {
-		
-		NSLog(@"Posts: %@", posts);
-		[self logThreadName];
-		
-	} onFailure:^{
-		
-		NSLog(@"failure");
-		[self logThreadName];
-		
-	}]];
-	
-	[nativeApi getPostsShow:1
-		   apiPostsResponse:[ApiPostsResponse showResponseOnSuccess:^(NativePostModel *post) {
-		
-		NSLog(@"Post: %@", post);
-		[self logThreadName];
-		
-	} onFailure:^{
-		
-		NSLog(@"failure");
-		[self logThreadName];
-		
-	}]];
 }
 
 - (void)didReceiveMemoryWarning {

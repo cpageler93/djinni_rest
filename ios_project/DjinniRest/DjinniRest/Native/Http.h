@@ -11,4 +11,7 @@
 
 @interface Http : NSObject<NativeHttp>
 
+- (void)getImageDataFromURL:(NSURL *)url
+				 completion:(void (^)(NSData *imageData))completion;
+
 @end

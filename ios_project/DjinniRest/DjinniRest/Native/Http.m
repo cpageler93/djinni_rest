@@ -56,4 +56,22 @@
 	}] resume];
 }
 
+- (void)getImageDataFromURL:(NSURL *)url
+				 completion:(void (^)(NSData *imageData))completion
+{
+	[[[NSURLSession sharedSession] dataTaskWithRequest:[NSURLRequest requestWithURL:url]
+									 completionHandler:^(NSData * _Nullable data,
+														 NSURLResponse * _Nullable response,
+														 NSError * _Nullable error)
+	{
+		
+		if (error) {
+			NSLog(@"ERROR");
+		} else {
+			completion(data);
+		}
+		
+	}] resume];
+}
+
 @end

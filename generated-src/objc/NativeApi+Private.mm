@@ -7,6 +7,7 @@
 #import "DJIError.h"
 #import "DJIMarshal+Private.h"
 #import "NativeApi+Private.h"
+#import "NativeApiPhotosResponse+Private.h"
 #import "NativeApiPostsResponse+Private.h"
 #import "NativeHttp+Private.h"
 #import "NativeThreadLauncher+Private.h"
@@ -53,6 +54,20 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     try {
         _cppRefHandle.get()->get_posts_show(::djinni::I64::toCpp(postId),
                                             ::djinni_generated::ApiPostsResponse::toCpp(apiPostsResponse));
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
+- (void)getPhotosIndex:(nullable id<NativeApiPhotosResponse>)apiPhotosResponse {
+    try {
+        _cppRefHandle.get()->get_photos_index(::djinni_generated::ApiPhotosResponse::toCpp(apiPhotosResponse));
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
+- (void)getPhotosShow:(int64_t)photoId
+    apiPhotosResponse:(nullable id<NativeApiPhotosResponse>)apiPhotosResponse {
+    try {
+        _cppRefHandle.get()->get_photos_show(::djinni::I64::toCpp(photoId),
+                                             ::djinni_generated::ApiPhotosResponse::toCpp(apiPhotosResponse));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

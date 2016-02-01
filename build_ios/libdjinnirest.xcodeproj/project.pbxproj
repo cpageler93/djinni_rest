@@ -23,37 +23,42 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		16B2C3144BE1EC6CBFE2F41A /* NativeHttp+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5521AF8BC97242B62BEF916D /* NativeHttp+Private.mm */; };
+		1D02E9C1E67A2EAC49B01B65 /* NativeApiPhotosResponse+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B5E901E540E3FA8F32972B1 /* NativeApiPhotosResponse+Private.mm */; };
 		216BC02D0ACF551CF53D53BC /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
-		21CD292298096CA4A12C96D8 /* NativeAsyncTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */; };
-		24BF7CA08DC03EDEA5E02AD4 /* NativePostModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68258BC5F2085D7B33A233E /* NativePostModel.mm */; };
-		2BBABBC703084A016018D32C /* NativeAsyncTask+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */; };
 		2DD74E5036E0AB1CBD0FD3AD /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
-		37F0D8BF4D96A4A52E10515B /* NativeHttpCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC3ACA29B09A02AA7C1069C7 /* NativeHttpCallback.cpp */; };
+		38DACE6036190E37BC312193 /* NativePhotoModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 318055255997233CB15431EC /* NativePhotoModel+Private.mm */; };
+		48D66C1FDDE30A96D116F116 /* NativePhotoModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FD348080D2B8E02B921D0 /* NativePhotoModel.cpp */; };
 		49F4BABF821EF0B3D66F83A3 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4256F174DA6AC961B56C466C /* utils.cpp */; };
-		4DBD551BA2C0C1A1A5D758C0 /* NativeThreadLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */; };
-		5320C35A14BB6F6E2531DCBD /* NativePostModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0471C175AF40E84728B3094E /* NativePostModel.cpp */; };
+		4DC51D83E73A0D98571242F0 /* NativeApiPostsResponse+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 410EA9415F801F3DE5F721B7 /* NativeApiPostsResponse+Private.mm */; };
+		508F4A85AC6C3F2F9F88872C /* NativeAsyncTask+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */; };
+		5DE9DE061992235F1384F8C2 /* NativeThreadLauncher+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */; };
+		69748D37F06828D4FBF32A70 /* NativePostModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0471C175AF40E84728B3094E /* NativePostModel.cpp */; };
+		6E4689929C450971D561AF49 /* NativeApiPhotosResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F294C32A96576174394B4ECD /* NativeApiPhotosResponse.cpp */; };
+		6F7DABE879009E2354D5EE4B /* NativeHttpCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC3ACA29B09A02AA7C1069C7 /* NativeHttpCallback.cpp */; };
 		7C550BDB1E9FABFB0C539ED9 /* libdjinnirest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 818386456C11E6C086652551 /* libdjinnirest.a */; };
 		7C8790AFFFD4CC8FAA825899 /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
-		859E0410905CF3CB790E3585 /* NativeHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 557E4ECBEC66A03F62557E95 /* NativeHttp.cpp */; };
+		7F10A231CB0855143B67FF10 /* NativeApi+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 684F59357A0F0650221AE462 /* NativeApi+Private.mm */; };
+		7FBA615BB1CE3910181C195D /* NativeApiPostsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F3BA8F9D744349A62A4F48C /* NativeApiPostsResponse.cpp */; };
+		810204DBDFECBCF77AE5B001 /* NativeApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */; };
 		A00462E578DACF24D43D12A8 /* djinni_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66C1133B7E181CA277806AF5 /* djinni_main.cpp */; };
 		A2362B320D2DA760F73C6EBE /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
-		A8C75636577FEBEBB72EC563 /* NativeApiPostsResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F3BA8F9D744349A62A4F48C /* NativeApiPostsResponse.cpp */; };
+		A7C1D5279AC53C17094D8070 /* NativePostModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68258BC5F2085D7B33A233E /* NativePostModel.mm */; };
 		AA65E4439F5B7A2648A20497 /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
 		AB46F4FA75E9ED86B73CAEA4 /* async_task_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA743765723B7C1526DE2A8F /* async_task_impl.cpp */; };
+		B3E0C6AA35E045C7AAF90E43 /* NativeHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 557E4ECBEC66A03F62557E95 /* NativeHttp.cpp */; };
 		BB6BF7BCA69C78AED16B3366 /* http_callback_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */; };
-		BC59162EBCE5B871F4E1F348 /* NativeApiPostsResponse+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 410EA9415F801F3DE5F721B7 /* NativeApiPostsResponse+Private.mm */; };
-		C42A968C226E35AF0653F260 /* NativeHttp+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5521AF8BC97242B62BEF916D /* NativeHttp+Private.mm */; };
 		C68BEDF80B7F1B8191ADA21B /* libjson11.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D233306E21138D7CD17451 /* libjson11.a */; };
 		CC0C2B6EB9E44EE60ACF0A0E /* libdjinni_jni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B489D6C8ECECCBA93801316 /* libdjinni_jni.a */; };
+		CD9D9CF46E83C86865E8D4E3 /* NativePhotoModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = A996AE3445732579B36637A3 /* NativePhotoModel.mm */; };
 		CE9344A46DDFE95825E2CB50 /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
-		D2DF0B938CD1CB603F792E3D /* NativeApi+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 684F59357A0F0650221AE462 /* NativeApi+Private.mm */; };
 		DBE0CB9A53EEF487D5D79432 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4256F174DA6AC961B56C466C /* utils.cpp */; };
 		DDFC2D4DF5A6B3A374129C3A /* api_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B9EF9BA1EE764148342449 /* api_impl.cpp */; };
-		DFEC339A71DA1BE025A48AEE /* NativeHttpCallback+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F93C940A1A43030A3BD84795 /* NativeHttpCallback+Private.mm */; };
-		E147B3512B3C15D2AFBB47AD /* NativePostModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2DEF35FDED194E68F78D250 /* NativePostModel+Private.mm */; };
 		E9F5F9ADBCA4AC00C6DD8531 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4256F174DA6AC961B56C466C /* utils.cpp */; };
-		F4245B4459101C0288385293 /* NativeThreadLauncher+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */; };
-		F617D0EC31D33454A32C249C /* NativeApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */; };
+		ECA2D554126721B21E0256DC /* NativeHttpCallback+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F93C940A1A43030A3BD84795 /* NativeHttpCallback+Private.mm */; };
+		ECC857D19DA0F5479DD97ABA /* NativePostModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2DEF35FDED194E68F78D250 /* NativePostModel+Private.mm */; };
+		F21EA64F7AD3C1D7FE69A96C /* NativeThreadLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */; };
+		F42036EE2B66CA9247131EE3 /* NativeAsyncTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,8 +136,11 @@
 		23B9EF9BA1EE764148342449 /* api_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = api_impl.cpp; sourceTree = "<group>"; };
 		245D5797309111821133F55F /* http_callback.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = http_callback.hpp; sourceTree = "<group>"; };
 		253222E24D44476B0C1FC1E1 /* NativePostModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativePostModel.h; sourceTree = "<group>"; };
+		2B5E901E540E3FA8F32972B1 /* NativeApiPhotosResponse+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeApiPhotosResponse+Private.mm"; sourceTree = "<group>"; };
+		318055255997233CB15431EC /* NativePhotoModel+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativePhotoModel+Private.mm"; sourceTree = "<group>"; };
 		358E90744B92A5DEFB668960 /* NativeApiPostsResponse+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeApiPostsResponse+Private.h"; sourceTree = "<group>"; };
 		3BF2CF8163D9232A3A4F3D42 /* thread_launcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = thread_launcher.hpp; sourceTree = "<group>"; };
+		3E06031AA8F304F2F9B4AC7F /* photo_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = photo_model.hpp; sourceTree = "<group>"; };
 		3EF3C60DCA9C860A9E8A418E /* api_posts_response.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = api_posts_response.hpp; sourceTree = "<group>"; };
 		410EA9415F801F3DE5F721B7 /* NativeApiPostsResponse+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeApiPostsResponse+Private.mm"; sourceTree = "<group>"; };
 		4256F174DA6AC961B56C466C /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
@@ -145,22 +153,27 @@
 		65AD4FA9DA47C76F6BB5DF54 /* NativePostModel+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativePostModel+Private.h"; sourceTree = "<group>"; };
 		66C1133B7E181CA277806AF5 /* djinni_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = djinni_main.cpp; sourceTree = "<group>"; };
 		684F59357A0F0650221AE462 /* NativeApi+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeApi+Private.mm"; sourceTree = "<group>"; };
+		6D6E9204A22B1277A9DBEE0F /* NativePhotoModel+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativePhotoModel+Private.h"; sourceTree = "<group>"; };
 		6E59117963001174D1F54110 /* NativeHttp+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeHttp+Private.h"; sourceTree = "<group>"; };
 		6F3BA8F9D744349A62A4F48C /* NativeApiPostsResponse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeApiPostsResponse.cpp; sourceTree = "<group>"; };
+		75E45C8188D29D211005D2AF /* NativeApiPhotosResponse+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeApiPhotosResponse+Private.h"; sourceTree = "<group>"; };
 		7F7BD3F1339E26CA97FB66C8 /* http_callback_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_callback_impl.cpp; sourceTree = "<group>"; };
 		7FE7F18A44A73D9A331DD0BF /* NativeApi+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeApi+Private.h"; sourceTree = "<group>"; };
 		818386456C11E6C086652551 /* libdjinnirest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdjinnirest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		852E0350D12E69F25389BDD1 /* std_util.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = std_util.hpp; sourceTree = "<group>"; };
+		8C0FD348080D2B8E02B921D0 /* NativePhotoModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativePhotoModel.cpp; sourceTree = "<group>"; };
 		8D3265CA4FE47910461B4545 /* http_callback_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = http_callback_impl.hpp; sourceTree = "<group>"; };
 		9E21D62DC6A8C69F8B4E1596 /* support_lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = support_lib.xcodeproj; path = "build_ios/deps/djinni/support-lib/support_lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		9E3D64392F531389303042AF /* api.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = api.hpp; sourceTree = "<group>"; };
 		A115BB0F7F65CE14EA1E6C25 /* http_method.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = http_method.hpp; sourceTree = "<group>"; };
 		A2FAE8D68D0F1544E326B297 /* libdjinnirest_jni.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdjinnirest_jni.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68258BC5F2085D7B33A233E /* NativePostModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NativePostModel.mm; sourceTree = "<group>"; };
+		A996AE3445732579B36637A3 /* NativePhotoModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NativePhotoModel.mm; sourceTree = "<group>"; };
 		AA743765723B7C1526DE2A8F /* async_task_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = async_task_impl.cpp; sourceTree = "<group>"; };
 		B02B08615C3BCC129A496892 /* NativeHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHttp.h; sourceTree = "<group>"; };
 		B4717B176E54A7BC4C5A5BD7 /* NativeThreadLauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeThreadLauncher.h; sourceTree = "<group>"; };
 		B5C7044DCC67B061A61DDF56 /* json11.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = json11.xcodeproj; path = build_ios/deps/json11.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B9807B9FBBFB1080EC543DC1 /* NativePhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativePhotoModel.h; sourceTree = "<group>"; };
 		C6C2CA1FC91FF2355479E32B /* NativeHttpCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHttpCallback.h; sourceTree = "<group>"; };
 		CBE1B95970B04E6ED9719E0D /* api_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = api_impl.hpp; sourceTree = "<group>"; };
 		CEDDFF93C9050512344B0D49 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = deps/djinni/common.gypi; sourceTree = "<group>"; };
@@ -169,14 +182,17 @@
 		D2DEF35FDED194E68F78D250 /* NativePostModel+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativePostModel+Private.mm"; sourceTree = "<group>"; };
 		D38A6497E8B177CE4F042075 /* NativeHttpMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHttpMethod.h; sourceTree = "<group>"; };
 		DBD97437EC621854492F60B8 /* async_task_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = async_task_impl.hpp; sourceTree = "<group>"; };
+		E00483457AF9A6474F73C4B1 /* NativeApiPhotosResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeApiPhotosResponse.h; sourceTree = "<group>"; };
 		E1419E7A5C3C5C784DD1C7EF /* async_task.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = async_task.hpp; sourceTree = "<group>"; };
 		E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeApi.cpp; sourceTree = "<group>"; };
 		EBDABA7B3B0E67C34410B956 /* NativeThreadLauncher+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeThreadLauncher+Private.h"; sourceTree = "<group>"; };
 		EC3ACA29B09A02AA7C1069C7 /* NativeHttpCallback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeHttpCallback.cpp; sourceTree = "<group>"; };
+		F294C32A96576174394B4ECD /* NativeApiPhotosResponse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeApiPhotosResponse.cpp; sourceTree = "<group>"; };
 		F5303BCFB86B17C8BC0C96AA /* libdjinnirest.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = libdjinnirest.gyp; sourceTree = "<group>"; };
 		F6B7AD05956BCD3F6083B36A /* NativeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeApi.h; sourceTree = "<group>"; };
 		F93C940A1A43030A3BD84795 /* NativeHttpCallback+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NativeHttpCallback+Private.mm"; sourceTree = "<group>"; };
 		FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeAsyncTask.cpp; sourceTree = "<group>"; };
+		FFA7EA06370CE194F40E3958 /* api_photos_response.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = api_photos_response.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,25 +226,11 @@
 		01C171CC53B05B4EA599D064 /* generated-src */ = {
 			isa = PBXGroup;
 			children = (
-				D8E4C312BDD891FE9C59CDF2 /* cpp */,
-				428514A1BD77E7514176D37E /* jni */,
-				B9076ED4306A6AD10D2013F1 /* objc */,
+				6D2415D5CFE86963633F1403 /* cpp */,
+				FBD45A9A738D1516D9B79898 /* jni */,
+				F0AE2A0936D917D1986EBA94 /* objc */,
 			);
 			path = "generated-src";
-			sourceTree = "<group>";
-		};
-		428514A1BD77E7514176D37E /* jni */ = {
-			isa = PBXGroup;
-			children = (
-				E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */,
-				6F3BA8F9D744349A62A4F48C /* NativeApiPostsResponse.cpp */,
-				FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */,
-				557E4ECBEC66A03F62557E95 /* NativeHttp.cpp */,
-				EC3ACA29B09A02AA7C1069C7 /* NativeHttpCallback.cpp */,
-				0471C175AF40E84728B3094E /* NativePostModel.cpp */,
-				4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */,
-			);
-			path = jni;
 			sourceTree = "<group>";
 		};
 		5EDBC37D9DE53C342BD5D095 /* Products */ = {
@@ -239,6 +241,23 @@
 				00AEE462F847F82A76833A33 /* libdjinnirest_objc.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6D2415D5CFE86963633F1403 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				9E3D64392F531389303042AF /* api.hpp */,
+				FFA7EA06370CE194F40E3958 /* api_photos_response.hpp */,
+				3EF3C60DCA9C860A9E8A418E /* api_posts_response.hpp */,
+				E1419E7A5C3C5C784DD1C7EF /* async_task.hpp */,
+				5225935928EB57C8DDC3E836 /* http.hpp */,
+				245D5797309111821133F55F /* http_callback.hpp */,
+				A115BB0F7F65CE14EA1E6C25 /* http_method.hpp */,
+				3E06031AA8F304F2F9B4AC7F /* photo_model.hpp */,
+				10A5B2D713EB87BB065FF99E /* post_model.hpp */,
+				3BF2CF8163D9232A3A4F3D42 /* thread_launcher.hpp */,
+			);
+			path = cpp;
 			sourceTree = "<group>";
 		};
 		8575F71A5900C991680245C6 /* Source */ = {
@@ -257,36 +276,6 @@
 				56D233306E21138D7CD17451 /* libjson11.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B9076ED4306A6AD10D2013F1 /* objc */ = {
-			isa = PBXGroup;
-			children = (
-				7FE7F18A44A73D9A331DD0BF /* NativeApi+Private.h */,
-				684F59357A0F0650221AE462 /* NativeApi+Private.mm */,
-				F6B7AD05956BCD3F6083B36A /* NativeApi.h */,
-				358E90744B92A5DEFB668960 /* NativeApiPostsResponse+Private.h */,
-				410EA9415F801F3DE5F721B7 /* NativeApiPostsResponse+Private.mm */,
-				49A5E1816275EFC7DA1C4F67 /* NativeApiPostsResponse.h */,
-				05D74318243EE5000ABCE5E2 /* NativeAsyncTask+Private.h */,
-				203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */,
-				D16B476A67B6670D231BD4DB /* NativeAsyncTask.h */,
-				6E59117963001174D1F54110 /* NativeHttp+Private.h */,
-				5521AF8BC97242B62BEF916D /* NativeHttp+Private.mm */,
-				B02B08615C3BCC129A496892 /* NativeHttp.h */,
-				D14602A24F16CD18E5E5D808 /* NativeHttpCallback+Private.h */,
-				F93C940A1A43030A3BD84795 /* NativeHttpCallback+Private.mm */,
-				C6C2CA1FC91FF2355479E32B /* NativeHttpCallback.h */,
-				D38A6497E8B177CE4F042075 /* NativeHttpMethod.h */,
-				65AD4FA9DA47C76F6BB5DF54 /* NativePostModel+Private.h */,
-				D2DEF35FDED194E68F78D250 /* NativePostModel+Private.mm */,
-				253222E24D44476B0C1FC1E1 /* NativePostModel.h */,
-				A68258BC5F2085D7B33A233E /* NativePostModel.mm */,
-				EBDABA7B3B0E67C34410B956 /* NativeThreadLauncher+Private.h */,
-				63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */,
-				B4717B176E54A7BC4C5A5BD7 /* NativeThreadLauncher.h */,
-			);
-			path = objc;
 			sourceTree = "<group>";
 		};
 		BB9917C8460A7AB8137EC596 /* Products */ = {
@@ -332,21 +321,6 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		D8E4C312BDD891FE9C59CDF2 /* cpp */ = {
-			isa = PBXGroup;
-			children = (
-				9E3D64392F531389303042AF /* api.hpp */,
-				3EF3C60DCA9C860A9E8A418E /* api_posts_response.hpp */,
-				E1419E7A5C3C5C784DD1C7EF /* async_task.hpp */,
-				5225935928EB57C8DDC3E836 /* http.hpp */,
-				245D5797309111821133F55F /* http_callback.hpp */,
-				A115BB0F7F65CE14EA1E6C25 /* http_method.hpp */,
-				10A5B2D713EB87BB065FF99E /* post_model.hpp */,
-				3BF2CF8163D9232A3A4F3D42 /* thread_launcher.hpp */,
-			);
-			path = cpp;
-			sourceTree = "<group>";
-		};
 		E1D0E50ABE63A11BF9904756 /* Build */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +336,59 @@
 				66C1133B7E181CA277806AF5 /* djinni_main.cpp */,
 			);
 			path = "deps/djinni/support-lib/jni";
+			sourceTree = "<group>";
+		};
+		F0AE2A0936D917D1986EBA94 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				7FE7F18A44A73D9A331DD0BF /* NativeApi+Private.h */,
+				684F59357A0F0650221AE462 /* NativeApi+Private.mm */,
+				F6B7AD05956BCD3F6083B36A /* NativeApi.h */,
+				75E45C8188D29D211005D2AF /* NativeApiPhotosResponse+Private.h */,
+				2B5E901E540E3FA8F32972B1 /* NativeApiPhotosResponse+Private.mm */,
+				E00483457AF9A6474F73C4B1 /* NativeApiPhotosResponse.h */,
+				358E90744B92A5DEFB668960 /* NativeApiPostsResponse+Private.h */,
+				410EA9415F801F3DE5F721B7 /* NativeApiPostsResponse+Private.mm */,
+				49A5E1816275EFC7DA1C4F67 /* NativeApiPostsResponse.h */,
+				05D74318243EE5000ABCE5E2 /* NativeAsyncTask+Private.h */,
+				203BE3ADC291EE1431E06D8A /* NativeAsyncTask+Private.mm */,
+				D16B476A67B6670D231BD4DB /* NativeAsyncTask.h */,
+				6E59117963001174D1F54110 /* NativeHttp+Private.h */,
+				5521AF8BC97242B62BEF916D /* NativeHttp+Private.mm */,
+				B02B08615C3BCC129A496892 /* NativeHttp.h */,
+				D14602A24F16CD18E5E5D808 /* NativeHttpCallback+Private.h */,
+				F93C940A1A43030A3BD84795 /* NativeHttpCallback+Private.mm */,
+				C6C2CA1FC91FF2355479E32B /* NativeHttpCallback.h */,
+				D38A6497E8B177CE4F042075 /* NativeHttpMethod.h */,
+				6D6E9204A22B1277A9DBEE0F /* NativePhotoModel+Private.h */,
+				318055255997233CB15431EC /* NativePhotoModel+Private.mm */,
+				B9807B9FBBFB1080EC543DC1 /* NativePhotoModel.h */,
+				A996AE3445732579B36637A3 /* NativePhotoModel.mm */,
+				65AD4FA9DA47C76F6BB5DF54 /* NativePostModel+Private.h */,
+				D2DEF35FDED194E68F78D250 /* NativePostModel+Private.mm */,
+				253222E24D44476B0C1FC1E1 /* NativePostModel.h */,
+				A68258BC5F2085D7B33A233E /* NativePostModel.mm */,
+				EBDABA7B3B0E67C34410B956 /* NativeThreadLauncher+Private.h */,
+				63E96621CF10F1721852ED6A /* NativeThreadLauncher+Private.mm */,
+				B4717B176E54A7BC4C5A5BD7 /* NativeThreadLauncher.h */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		FBD45A9A738D1516D9B79898 /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				E5EBCEE11CE398C46AF454CC /* NativeApi.cpp */,
+				F294C32A96576174394B4ECD /* NativeApiPhotosResponse.cpp */,
+				6F3BA8F9D744349A62A4F48C /* NativeApiPostsResponse.cpp */,
+				FD42E8855E46653A357F32D1 /* NativeAsyncTask.cpp */,
+				557E4ECBEC66A03F62557E95 /* NativeHttp.cpp */,
+				EC3ACA29B09A02AA7C1069C7 /* NativeHttpCallback.cpp */,
+				8C0FD348080D2B8E02B921D0 /* NativePhotoModel.cpp */,
+				0471C175AF40E84728B3094E /* NativePostModel.cpp */,
+				4A00A890D3BC5CDA237A5187 /* NativeThreadLauncher.cpp */,
+			);
+			path = jni;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,13 +519,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00462E578DACF24D43D12A8 /* djinni_main.cpp in Sources */,
-				F617D0EC31D33454A32C249C /* NativeApi.cpp in Sources */,
-				A8C75636577FEBEBB72EC563 /* NativeApiPostsResponse.cpp in Sources */,
-				21CD292298096CA4A12C96D8 /* NativeAsyncTask.cpp in Sources */,
-				859E0410905CF3CB790E3585 /* NativeHttp.cpp in Sources */,
-				37F0D8BF4D96A4A52E10515B /* NativeHttpCallback.cpp in Sources */,
-				5320C35A14BB6F6E2531DCBD /* NativePostModel.cpp in Sources */,
-				4DBD551BA2C0C1A1A5D758C0 /* NativeThreadLauncher.cpp in Sources */,
+				810204DBDFECBCF77AE5B001 /* NativeApi.cpp in Sources */,
+				6E4689929C450971D561AF49 /* NativeApiPhotosResponse.cpp in Sources */,
+				7FBA615BB1CE3910181C195D /* NativeApiPostsResponse.cpp in Sources */,
+				F42036EE2B66CA9247131EE3 /* NativeAsyncTask.cpp in Sources */,
+				B3E0C6AA35E045C7AAF90E43 /* NativeHttp.cpp in Sources */,
+				6F7DABE879009E2354D5EE4B /* NativeHttpCallback.cpp in Sources */,
+				48D66C1FDDE30A96D116F116 /* NativePhotoModel.cpp in Sources */,
+				69748D37F06828D4FBF32A70 /* NativePostModel.cpp in Sources */,
+				F21EA64F7AD3C1D7FE69A96C /* NativeThreadLauncher.cpp in Sources */,
 				DDFC2D4DF5A6B3A374129C3A /* api_impl.cpp in Sources */,
 				A2362B320D2DA760F73C6EBE /* async_task_impl.cpp in Sources */,
 				BB6BF7BCA69C78AED16B3366 /* http_callback_impl.cpp in Sources */,
@@ -510,14 +539,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2DF0B938CD1CB603F792E3D /* NativeApi+Private.mm in Sources */,
-				BC59162EBCE5B871F4E1F348 /* NativeApiPostsResponse+Private.mm in Sources */,
-				2BBABBC703084A016018D32C /* NativeAsyncTask+Private.mm in Sources */,
-				C42A968C226E35AF0653F260 /* NativeHttp+Private.mm in Sources */,
-				DFEC339A71DA1BE025A48AEE /* NativeHttpCallback+Private.mm in Sources */,
-				E147B3512B3C15D2AFBB47AD /* NativePostModel+Private.mm in Sources */,
-				24BF7CA08DC03EDEA5E02AD4 /* NativePostModel.mm in Sources */,
-				F4245B4459101C0288385293 /* NativeThreadLauncher+Private.mm in Sources */,
+				7F10A231CB0855143B67FF10 /* NativeApi+Private.mm in Sources */,
+				1D02E9C1E67A2EAC49B01B65 /* NativeApiPhotosResponse+Private.mm in Sources */,
+				4DC51D83E73A0D98571242F0 /* NativeApiPostsResponse+Private.mm in Sources */,
+				508F4A85AC6C3F2F9F88872C /* NativeAsyncTask+Private.mm in Sources */,
+				16B2C3144BE1EC6CBFE2F41A /* NativeHttp+Private.mm in Sources */,
+				ECA2D554126721B21E0256DC /* NativeHttpCallback+Private.mm in Sources */,
+				38DACE6036190E37BC312193 /* NativePhotoModel+Private.mm in Sources */,
+				CD9D9CF46E83C86865E8D4E3 /* NativePhotoModel.mm in Sources */,
+				ECC857D19DA0F5479DD97ABA /* NativePostModel+Private.mm in Sources */,
+				A7C1D5279AC53C17094D8070 /* NativePostModel.mm in Sources */,
+				5DE9DE061992235F1384F8C2 /* NativeThreadLauncher+Private.mm in Sources */,
 				CE9344A46DDFE95825E2CB50 /* api_impl.cpp in Sources */,
 				2DD74E5036E0AB1CBD0FD3AD /* async_task_impl.cpp in Sources */,
 				7C8790AFFFD4CC8FAA825899 /* http_callback_impl.cpp in Sources */,

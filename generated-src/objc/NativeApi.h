@@ -3,6 +3,7 @@
 
 #import <Foundation/Foundation.h>
 @class NativeApi;
+@protocol NativeApiPhotosResponse;
 @protocol NativeApiPostsResponse;
 @protocol NativeHttp;
 @protocol NativeThreadLauncher;
@@ -17,5 +18,10 @@
 
 - (void)getPostsShow:(int64_t)postId
     apiPostsResponse:(nullable id<NativeApiPostsResponse>)apiPostsResponse;
+
+- (void)getPhotosIndex:(nullable id<NativeApiPhotosResponse>)apiPhotosResponse;
+
+- (void)getPhotosShow:(int64_t)photoId
+    apiPhotosResponse:(nullable id<NativeApiPhotosResponse>)apiPhotosResponse;
 
 @end

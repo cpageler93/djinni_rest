@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		595522131C5EA79700768A53 /* libjson11.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 595522121C5EA79700768A53 /* libjson11.a */; };
+		598603471C5F729A00D2323C /* ApiPhotosResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 598603461C5F729A00D2323C /* ApiPhotosResponse.m */; };
+		5986034B1C5F743600D2323C /* DjinniRestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5986034A1C5F743600D2323C /* DjinniRestService.m */; };
 		5989255A1C5C283E004D2BB0 /* ThreadLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925591C5C283E004D2BB0 /* ThreadLauncher.m */; };
 		598925681C5CE668004D2BB0 /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 598925671C5CE668004D2BB0 /* Http.m */; };
 		5989256C1C5CED2A004D2BB0 /* ApiPostsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989256B1C5CED2A004D2BB0 /* ApiPostsResponse.m */; };
@@ -42,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		595522121C5EA79700768A53 /* libjson11.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson11.a; path = "../../deps/build/Debug-iphoneos/libjson11.a"; sourceTree = "<group>"; };
+		598603451C5F729A00D2323C /* ApiPhotosResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiPhotosResponse.h; path = Native/ApiPhotosResponse.h; sourceTree = "<group>"; };
+		598603461C5F729A00D2323C /* ApiPhotosResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiPhotosResponse.m; path = Native/ApiPhotosResponse.m; sourceTree = "<group>"; };
+		598603491C5F743600D2323C /* DjinniRestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DjinniRestService.h; path = Service/DjinniRestService.h; sourceTree = "<group>"; };
+		5986034A1C5F743600D2323C /* DjinniRestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DjinniRestService.m; path = Service/DjinniRestService.m; sourceTree = "<group>"; };
 		598925581C5C283E004D2BB0 /* ThreadLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadLauncher.h; path = Native/ThreadLauncher.h; sourceTree = "<group>"; };
 		598925591C5C283E004D2BB0 /* ThreadLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreadLauncher.m; path = Native/ThreadLauncher.m; sourceTree = "<group>"; };
 		598925661C5CE668004D2BB0 /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Http.h; path = Native/Http.h; sourceTree = "<group>"; };
@@ -96,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		598603481C5F742200D2323C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				598603491C5F743600D2323C /* DjinniRestService.h */,
+				5986034A1C5F743600D2323C /* DjinniRestService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		598925571C5C282F004D2BB0 /* Native */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +118,8 @@
 				598925591C5C283E004D2BB0 /* ThreadLauncher.m */,
 				5989256A1C5CED2A004D2BB0 /* ApiPostsResponse.h */,
 				5989256B1C5CED2A004D2BB0 /* ApiPostsResponse.m */,
+				598603451C5F729A00D2323C /* ApiPhotosResponse.h */,
+				598603461C5F729A00D2323C /* ApiPhotosResponse.m */,
 				598925661C5CE668004D2BB0 /* Http.h */,
 				598925671C5CE668004D2BB0 /* Http.m */,
 			);
@@ -136,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				598925571C5C282F004D2BB0 /* Native */,
+				598603481C5F742200D2323C /* Service */,
 				59AFE8691C56B4A000034BCF /* AppDelegate.h */,
 				59AFE86A1C56B4A000034BCF /* AppDelegate.m */,
 				59AFE86C1C56B4A000034BCF /* ViewController.h */,
@@ -306,11 +324,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5989256C1C5CED2A004D2BB0 /* ApiPostsResponse.m in Sources */,
+				5986034B1C5F743600D2323C /* DjinniRestService.m in Sources */,
 				59AFE86E1C56B4A000034BCF /* ViewController.m in Sources */,
 				5989255A1C5C283E004D2BB0 /* ThreadLauncher.m in Sources */,
 				59AFE86B1C56B4A000034BCF /* AppDelegate.m in Sources */,
 				59AFE8681C56B4A000034BCF /* main.mm in Sources */,
 				598925681C5CE668004D2BB0 /* Http.m in Sources */,
+				598603471C5F729A00D2323C /* ApiPhotosResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
