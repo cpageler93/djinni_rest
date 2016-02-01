@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 #import "NativePhotoModel.h"
+#import "NativePostModel.h"
 
 @interface DjinniRestService : NSObject
 
@@ -19,5 +20,7 @@
 
 - (void)getImageFromUrl:(NSURL *)imageUrl
 			 completion:(void (^)(UIImage *image))completion;
+
+- (BOOL)isPostValid:(NativePostModel *)postModel;
 
 @end

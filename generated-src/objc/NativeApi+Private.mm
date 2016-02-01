@@ -10,6 +10,7 @@
 #import "NativeApiPhotosResponse+Private.h"
 #import "NativeApiPostsResponse+Private.h"
 #import "NativeHttp+Private.h"
+#import "NativePostModel+Private.h"
 #import "NativeThreadLauncher+Private.h"
 #include <exception>
 #include <utility>
@@ -54,6 +55,13 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     try {
         _cppRefHandle.get()->get_posts_show(::djinni::I64::toCpp(postId),
                                             ::djinni_generated::ApiPostsResponse::toCpp(apiPostsResponse));
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
+- (BOOL)isPostValid:(nonnull NativePostModel *)postModel {
+    try {
+        auto r = _cppRefHandle.get()->is_post_valid(::djinni_generated::PostModel::toCpp(postModel));
+        return ::djinni::Bool::fromCpp(r);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

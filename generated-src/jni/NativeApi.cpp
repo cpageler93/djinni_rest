@@ -7,6 +7,7 @@
 #include "NativeApiPhotosResponse.hpp"
 #include "NativeApiPostsResponse.hpp"
 #include "NativeHttp.hpp"
+#include "NativePostModel.hpp"
 #include "NativeThreadLauncher.hpp"
 
 namespace djinni_generated {
@@ -51,6 +52,16 @@ CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native
         ref->get_posts_show(::djinni::I64::toCpp(jniEnv, j_postId),
                             ::djinni_generated::NativeApiPostsResponse::toCpp(jniEnv, j_apiPostsResponse));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
+}
+
+CJNIEXPORT jboolean JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1isPostValid(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_postModel)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
+        auto r = ref->is_post_valid(::djinni_generated::NativePostModel::toCpp(jniEnv, j_postModel));
+        return ::djinni::release(::djinni::Bool::fromCpp(jniEnv, r));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
 CJNIEXPORT void JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1getPhotosIndex(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jobject j_apiPhotosResponse)

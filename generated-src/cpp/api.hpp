@@ -12,6 +12,7 @@ class ApiPhotosResponse;
 class ApiPostsResponse;
 class Http;
 class ThreadLauncher;
+struct PostModel;
 
 class Api {
 public:
@@ -22,6 +23,8 @@ public:
     virtual void get_posts_index(const std::shared_ptr<ApiPostsResponse> & api_posts_response) = 0;
 
     virtual void get_posts_show(int64_t post_id, const std::shared_ptr<ApiPostsResponse> & api_posts_response) = 0;
+
+    virtual bool is_post_valid(const PostModel & post_model) = 0;
 
     virtual void get_photos_index(const std::shared_ptr<ApiPhotosResponse> & api_photos_response) = 0;
 

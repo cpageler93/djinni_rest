@@ -19,18 +19,24 @@
 {
 	[super viewDidLoad];
 	
-	[[DjinniRestService sharedInstance] getPhotosIndex:^(NSArray<NativePhotoModel *> *photos) {
-		
-		[photos enumerateObjectsUsingBlock:^(NativePhotoModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-			if (idx == 0) {
-				[[DjinniRestService sharedInstance] getImageFromUrl:[NSURL URLWithString:obj.url] completion:^(UIImage *image) {
-					NSLog(@"show image: %@", image);
-				}];
-			} else {
-				*stop = YES;
-			}
-		}];
-	}];
+//	[[DjinniRestService sharedInstance] getPhotosIndex:^(NSArray<NativePhotoModel *> *photos) {
+//		
+//		[photos enumerateObjectsUsingBlock:^(NativePhotoModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//			if (idx == 0) {
+//				[[DjinniRestService sharedInstance] getImageFromUrl:[NSURL URLWithString:obj.url] completion:^(UIImage *image) {
+//					NSLog(@"show image: %@", image);
+//				}];
+//			} else {
+//				*stop = YES;
+//			}
+//		}];
+//	}];
+	
+	NativePostModel *post = [NativePostModel postModelWithId:0
+													   title:@"Title"
+														body:@"Body"];
+	BOOL isPostValid = [[DjinniRestService sharedInstance] isPostValid:post];
+	NSLog(@"Post is valid: %d", isPostValid);
 	
 }
 

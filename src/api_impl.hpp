@@ -28,6 +28,8 @@ namespace djinni_rest {
 		virtual void get_posts_index(const std::shared_ptr<djinni_rest_gen::ApiPostsResponse> & api_posts_response);
 		virtual void get_posts_show(int64_t post_id, const std::shared_ptr<djinni_rest_gen::ApiPostsResponse> & api_posts_response);
 
+		virtual bool is_post_valid(const djinni_rest_gen::PostModel & post_model);
+
 		virtual void get_photos_index(const std::shared_ptr<djinni_rest_gen::ApiPhotosResponse> & api_photos_response);
     	virtual void get_photos_show(int64_t photo_id, const std::shared_ptr<djinni_rest_gen::ApiPhotosResponse> & api_photos_response);
 	private:

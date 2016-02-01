@@ -68,4 +68,9 @@
 	}];
 }
 
+- (BOOL)isPostValid:(NativePostModel *)postModel
+{
+	return [self.nativeApi isPostValid:postModel];
+}
+
 @end
