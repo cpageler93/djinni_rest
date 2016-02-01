@@ -7,14 +7,16 @@
  ../../../src/../generated-src/cpp/http.hpp \
  ../../../src/../generated-src/cpp/http_method.hpp \
  ../../../src/../generated-src/cpp/post_model.hpp \
+ ../../../src/../generated-src/cpp/photo_model.hpp \
  ../../../src/../generated-src/cpp/api_posts_response.hpp \
  /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ ../../../src/../generated-src/cpp/api_photos_response.hpp \
+ ../../../deps/json11/json11.hpp \
+ /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
  ../../../src/async_task_impl.hpp \
  ../../../src/../generated-src/cpp/async_task.hpp \
  ../../../src/http_callback_impl.hpp \
  ../../../src/../generated-src/cpp/http_callback.hpp \
- ../../../deps/json11/json11.hpp \
- /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
  ../../../src/std_util.hpp \
  /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream \
  /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream \
@@ -37,9 +39,17 @@
 
 ../../../src/../generated-src/cpp/post_model.hpp:
 
+../../../src/../generated-src/cpp/photo_model.hpp:
+
 ../../../src/../generated-src/cpp/api_posts_response.hpp:
 
 /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+
+../../../src/../generated-src/cpp/api_photos_response.hpp:
+
+../../../deps/json11/json11.hpp:
+
+/Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
 ../../../src/async_task_impl.hpp:
 
@@ -48,10 +58,6 @@
 ../../../src/http_callback_impl.hpp:
 
 ../../../src/../generated-src/cpp/http_callback.hpp:
-
-../../../deps/json11/json11.hpp:
-
-/Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
 ../../../src/std_util.hpp:
 

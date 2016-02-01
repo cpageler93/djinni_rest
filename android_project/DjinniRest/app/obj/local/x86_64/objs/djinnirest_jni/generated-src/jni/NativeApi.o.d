@@ -14,6 +14,8 @@
  ../../../deps/djinni/support-lib/jni/Marshal.hpp \
  /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set \
  /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ ../../../generated-src/jni/NativeApiPhotosResponse.hpp \
+ ../../../generated-src/cpp/api_photos_response.hpp \
  ../../../generated-src/jni/NativeApiPostsResponse.hpp \
  ../../../generated-src/cpp/api_posts_response.hpp \
  ../../../generated-src/jni/NativeHttp.hpp \
@@ -48,6 +50,10 @@
 /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set:
 
 /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+
+../../../generated-src/jni/NativeApiPhotosResponse.hpp:
+
+../../../generated-src/cpp/api_photos_response.hpp:
 
 ../../../generated-src/jni/NativeApiPostsResponse.hpp:
 

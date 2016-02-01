@@ -33,9 +33,9 @@ namespace djinni_rest {
 	private:
 		std::shared_ptr<djinni_rest_gen::ThreadLauncher> m_thread_launcher;
 		std::shared_ptr<djinni_rest_gen::Http> m_http;
-		
-		djinni_rest_gen::PostModel post_model_from_json_object(json11::Json::Json json);
-		djinni_rest_gen::PhotoModel photo_model_from_json_object(json11::Json::Json json);
+
+		djinni_rest_gen::PostModel post_model_from_json_object(json11::Json json);
+		djinni_rest_gen::PhotoModel photo_model_from_json_object(json11::Json json);
 	};
 
 }

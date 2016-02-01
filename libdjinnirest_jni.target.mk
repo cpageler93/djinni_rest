@@ -28,10 +28,12 @@ GYP_COPIED_SOURCE_ORIGIN_DIRS :=
 LOCAL_SRC_FILES := \
 	deps/djinni/support-lib/jni/djinni_main.cpp \
 	generated-src/jni/NativeApi.cpp \
+	generated-src/jni/NativeApiPhotosResponse.cpp \
 	generated-src/jni/NativeApiPostsResponse.cpp \
 	generated-src/jni/NativeAsyncTask.cpp \
 	generated-src/jni/NativeHttp.cpp \
 	generated-src/jni/NativeHttpCallback.cpp \
+	generated-src/jni/NativePhotoModel.cpp \
 	generated-src/jni/NativePostModel.cpp \
 	generated-src/jni/NativeThreadLauncher.cpp \
 	src/api_impl.cpp \

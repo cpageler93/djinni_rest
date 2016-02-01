@@ -109,7 +109,7 @@ void djinni_rest::Api::get_posts_show(
 	this->m_http->send(djinni_rest_gen::HttpMethod::GET, url, http_callback);
 }
 
-djinni_rest_gen::PostModel djinni_rest::Api::post_model_from_json_object(json11::Json::Json json)
+djinni_rest_gen::PostModel djinni_rest::Api::post_model_from_json_object(json11::Json json)
 {
 	return djinni_rest_gen::PostModel(
 									  json["id"].number_value(),
@@ -118,7 +118,7 @@ djinni_rest_gen::PostModel djinni_rest::Api::post_model_from_json_object(json11:
 									  );
 }
 
-djinni_rest_gen::PhotoModel djinni_rest::Api::photo_model_from_json_object(json11::Json::Json json)
+djinni_rest_gen::PhotoModel djinni_rest::Api::photo_model_from_json_object(json11::Json json)
 {
 	return djinni_rest_gen::PhotoModel(
 									   json["id"].number_value(),

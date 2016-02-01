@@ -1,5 +1,10 @@
 package main.java.com.thepeaklab.djinnirest;
 
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.widget.ImageView;
+
 import com.mycompany.djinni_rest.Http;
 import com.mycompany.djinni_rest.HttpCallback;
 import com.mycompany.djinni_rest.HttpMethod;
@@ -59,4 +64,34 @@ public class MyHttp extends Http {
         }
         return writer.toString();
     }
+
+    public void getImage(final String urlString, final ImageRequestCallback imageRequestCallback){
+        new android.os.AsyncTask<Void, Void, Void>() {
+            @Override
+            protected Void doInBackground(Void... params) {
+
+                int httpCode = 401;
+                String response = null;
+
+                try {
+                    URL url = new URL(urlString);
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
+                    Bitmap bitmap = BitmapFactory.decodeStream(conn.getInputStream());
+                    imageRequestCallback.onSuccess(bitmap);
+
+                } catch (MalformedURLException ex) {
+                    // do nothing
+                    imageRequestCallback.onError();
+                } catch (IOException ex) {
+                    // do nothing
+                    imageRequestCallback.onError();
+                }
+
+                return null;
+            }
+        }.execute();
+    }
+
+
 }
