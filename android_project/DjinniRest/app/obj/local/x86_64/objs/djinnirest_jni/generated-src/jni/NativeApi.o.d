@@ -20,6 +20,8 @@
  ../../../generated-src/cpp/api_posts_response.hpp \
  ../../../generated-src/jni/NativeHttp.hpp \
  ../../../generated-src/cpp/http.hpp \
+ ../../../generated-src/jni/NativePostModel.hpp \
+ ../../../generated-src/cpp/post_model.hpp \
  ../../../generated-src/jni/NativeThreadLauncher.hpp \
  ../../../generated-src/cpp/thread_launcher.hpp
 
@@ -62,6 +64,10 @@
 ../../../generated-src/jni/NativeHttp.hpp:
 
 ../../../generated-src/cpp/http.hpp:
+
+../../../generated-src/jni/NativePostModel.hpp:
+
+../../../generated-src/cpp/post_model.hpp:
 
 ../../../generated-src/jni/NativeThreadLauncher.hpp:
 

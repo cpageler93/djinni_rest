@@ -13,7 +13,7 @@
 #include "../generated-src/cpp/api_posts_response.hpp"
 #include "../generated-src/cpp/api_photos_response.hpp"
 
-#include <json11/json11.hpp>
+#include "../deps/json11/json11.hpp"
 
 namespace djinni_rest {
 

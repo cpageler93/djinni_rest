@@ -11,7 +11,7 @@
  ../../../src/../generated-src/cpp/api_posts_response.hpp \
  /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
  ../../../src/../generated-src/cpp/api_photos_response.hpp \
- ../../../deps/json11/json11.hpp \
+ ../../../src/../deps/json11/json11.hpp \
  /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
  ../../../src/async_task_impl.hpp \
  ../../../src/../generated-src/cpp/async_task.hpp \
@@ -47,7 +47,7 @@
 
 ../../../src/../generated-src/cpp/api_photos_response.hpp:
 
-../../../deps/json11/json11.hpp:
+../../../src/../deps/json11/json11.hpp:
 
 /Users/thomas/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
