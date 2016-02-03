@@ -78,4 +78,9 @@
 	return [self.nativeApi modifyPost:postModel];
 }
 
+- (NativeHelloModel *)sayHello:(NSString *)welcomeTitle
+{
+	return [self.nativeApi sayHello:welcomeTitle];
+}
+
 @end

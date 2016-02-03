@@ -5,6 +5,7 @@
 
 #include <cstdint>
 #include <memory>
+#include <string>
 
 namespace djinni_rest_gen {
 
@@ -12,6 +13,7 @@ class ApiPhotosResponse;
 class ApiPostsResponse;
 class Http;
 class ThreadLauncher;
+struct HelloModel;
 struct PostModel;
 
 class Api {
@@ -27,6 +29,8 @@ public:
     virtual bool is_post_valid(const PostModel & post_model) = 0;
 
     virtual PostModel modify_post(const PostModel & post_model) = 0;
+
+    virtual HelloModel say_hello(const std::string & welcome_title) = 0;
 
     virtual void get_photos_index(const std::shared_ptr<ApiPhotosResponse> & api_photos_response) = 0;
 

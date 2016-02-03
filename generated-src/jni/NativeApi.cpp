@@ -6,6 +6,7 @@
 #include "NativeApi.hpp"
 #include "NativeApiPhotosResponse.hpp"
 #include "NativeApiPostsResponse.hpp"
+#include "NativeHelloModel.hpp"
 #include "NativeHttp.hpp"
 #include "NativePostModel.hpp"
 #include "NativeThreadLauncher.hpp"
@@ -71,6 +72,16 @@ CJNIEXPORT jobject JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_nat
         const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
         auto r = ref->modify_post(::djinni_generated::NativePostModel::toCpp(jniEnv, j_postModel));
         return ::djinni::release(::djinni_generated::NativePostModel::fromCpp(jniEnv, r));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
+}
+
+CJNIEXPORT jobject JNICALL Java_com_mycompany_djinni_1rest_Api_00024CppProxy_native_1sayHello(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_welcomeTitle)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::djinni_rest_gen::Api>(nativeRef);
+        auto r = ref->say_hello(::djinni::String::toCpp(jniEnv, j_welcomeTitle));
+        return ::djinni::release(::djinni_generated::NativeHelloModel::fromCpp(jniEnv, r));
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 

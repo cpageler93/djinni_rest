@@ -9,6 +9,7 @@
 
 #include "../generated-src/cpp/post_model.hpp"
 #include "../generated-src/cpp/photo_model.hpp"
+#include "../generated-src/cpp/hello_model.hpp"
 
 #include "../generated-src/cpp/api_posts_response.hpp"
 #include "../generated-src/cpp/api_photos_response.hpp"
@@ -30,6 +31,8 @@ namespace djinni_rest {
 
 		virtual bool is_post_valid(const djinni_rest_gen::PostModel & post_model);
 		virtual djinni_rest_gen::PostModel modify_post(const djinni_rest_gen::PostModel & post_model);
+		
+		virtual djinni_rest_gen::HelloModel say_hello(const std::string & welcome_title);
 
 		virtual void get_photos_index(const std::shared_ptr<djinni_rest_gen::ApiPhotosResponse> & api_photos_response);
     	virtual void get_photos_show(int64_t photo_id, const std::shared_ptr<djinni_rest_gen::ApiPhotosResponse> & api_photos_response);

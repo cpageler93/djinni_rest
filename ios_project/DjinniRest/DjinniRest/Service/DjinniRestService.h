@@ -11,6 +11,7 @@
 
 #import "NativePhotoModel.h"
 #import "NativePostModel.h"
+#import "NativeHelloModel.h"
 
 @interface DjinniRestService : NSObject
 
@@ -24,5 +25,7 @@
 - (BOOL)isPostValid:(NativePostModel *)postModel;
 
 - (NativePostModel *)modifyPost:(NativePostModel *)postModel;
+
+- (NativeHelloModel *)sayHello:(NSString *)welcomeTitle;
 
 @end
