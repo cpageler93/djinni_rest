@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.mycompany.djinni_rest.Api;
 import com.mycompany.djinni_rest.ApiPhotosResponse;
 import com.mycompany.djinni_rest.ApiPostsResponse;
+import com.mycompany.djinni_rest.HelloModel;
 import com.mycompany.djinni_rest.PhotoModel;
 import com.mycompany.djinni_rest.PostModel;
 
@@ -113,6 +114,8 @@ public class MainActivity extends AppCompatActivity {
         mMyPhotoDataAdapter = new MyPhotoDataAdapter(mMyPhotoItemClickLIstener);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
+
+        //sayHello("Uwe");
 
     }
 
@@ -388,6 +391,42 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+//    /**
+//     * say hello
+//     *
+//     * @param helloString
+//     */
+//    private void sayHello(String helloString){
+//
+//        final long startTime = System.currentTimeMillis();
+//
+//        final HelloModel helloModel = api. sayHello(helloString);
+//
+//        calculateDuration("loadImage", startTime);
+//
+//        final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//
+//        runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                final AlertDialog dialog = builder.create();
+//
+//                dialog.setTitle("HelloModel");
+//                dialog.setMessage(helloModel.getWelcomeTitle());
+//                dialog.setButton(DialogInterface.BUTTON_POSITIVE, "close", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//
+//                dialog.show();
+//            }
+//        });
+//
+//    }
 
 
     /**

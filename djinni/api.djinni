@@ -18,9 +18,9 @@ photo_model = record {
 	thumbnail_url: string;
 }
 
-hello_model = record {
-	welcome_title: string;
-}
+#hello_model = record {
+#	welcome_title: string;
+#}
 
 api_photos_response = interface +o +j {
 	on_index_success(result: list<photo_model>);
@@ -36,7 +36,7 @@ api = interface +c {
     get_posts_show(post_id: i64, api_posts_response: api_posts_response);
     is_post_valid(post_model: post_model): bool;
     modify_post(post_model: post_model): post_model;
-    say_hello(welcome_title: string): hello_model;
+#    say_hello(welcome_title: string): hello_model;
 
     get_photos_index(api_photos_response: api_photos_response);
     get_photos_show(photo_id: i64, api_photos_response: api_photos_response);

@@ -14,8 +14,7 @@ public abstract class Api {
 
     public abstract PostModel modifyPost(PostModel postModel);
 
-    public abstract HelloModel sayHello(String welcomeTitle);
-
+    /**    say_hello(welcome_title: string): hello_model; */
     public abstract void getPhotosIndex(ApiPhotosResponse apiPhotosResponse);
 
     public abstract void getPhotosShow(long photoId, ApiPhotosResponse apiPhotosResponse);
@@ -76,14 +75,6 @@ public abstract class Api {
             return native_modifyPost(this.nativeRef, postModel);
         }
         private native PostModel native_modifyPost(long _nativeRef, PostModel postModel);
-
-        @Override
-        public HelloModel sayHello(String welcomeTitle)
-        {
-            assert !this.destroyed.get() : "trying to use a destroyed object";
-            return native_sayHello(this.nativeRef, welcomeTitle);
-        }
-        private native HelloModel native_sayHello(long _nativeRef, String welcomeTitle);
 
         @Override
         public void getPhotosIndex(ApiPhotosResponse apiPhotosResponse)

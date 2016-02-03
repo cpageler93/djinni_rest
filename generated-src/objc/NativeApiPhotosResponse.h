@@ -5,6 +5,11 @@
 #import <Foundation/Foundation.h>
 
 
+/**
+ *hello_model = record {
+ *	welcome_title: string;
+ *}
+ */
 @protocol NativeApiPhotosResponse
 
 - (void)onIndexSuccess:(nonnull NSArray<NativePhotoModel *> *)result;

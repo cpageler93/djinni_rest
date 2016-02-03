@@ -9,7 +9,6 @@
 #import "NativeApi+Private.h"
 #import "NativeApiPhotosResponse+Private.h"
 #import "NativeApiPostsResponse+Private.h"
-#import "NativeHelloModel+Private.h"
 #import "NativeHttp+Private.h"
 #import "NativePostModel+Private.h"
 #import "NativeThreadLauncher+Private.h"
@@ -70,13 +69,6 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     try {
         auto r = _cppRefHandle.get()->modify_post(::djinni_generated::PostModel::toCpp(postModel));
         return ::djinni_generated::PostModel::fromCpp(r);
-    } DJINNI_TRANSLATE_EXCEPTIONS()
-}
-
-- (nonnull NativeHelloModel *)sayHello:(nonnull NSString *)welcomeTitle {
-    try {
-        auto r = _cppRefHandle.get()->say_hello(::djinni::String::toCpp(welcomeTitle));
-        return ::djinni_generated::HelloModel::fromCpp(r);
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

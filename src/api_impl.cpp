@@ -123,10 +123,10 @@ djinni_rest_gen::PostModel djinni_rest::Api::modify_post(const djinni_rest_gen::
 									  );
 }
 
-djinni_rest_gen::HelloModel djinni_rest::Api::say_hello(const std::string & welcome_title)
-{
-	return djinni_rest_gen::HelloModel(welcome_title);
-}
+// djinni_rest_gen::HelloModel djinni_rest::Api::say_hello(const std::string & welcome_title)
+// {
+// 	return djinni_rest_gen::HelloModel(welcome_title);
+// }
 
 djinni_rest_gen::PostModel djinni_rest::Api::post_model_from_json_object(json11::Json json)
 {

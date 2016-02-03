@@ -5,6 +5,11 @@ package com.mycompany.djinni_rest;
 
 import java.util.ArrayList;
 
+/**
+ *hello_model = record {
+ *	welcome_title: string;
+ *}
+ */
 public abstract class ApiPhotosResponse {
     public abstract void onIndexSuccess(ArrayList<PhotoModel> result);
 

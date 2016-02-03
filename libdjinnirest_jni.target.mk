@@ -31,6 +31,7 @@ LOCAL_SRC_FILES := \
 	generated-src/jni/NativeApiPhotosResponse.cpp \
 	generated-src/jni/NativeApiPostsResponse.cpp \
 	generated-src/jni/NativeAsyncTask.cpp \
+	generated-src/jni/NativeHelloModel.cpp \
 	generated-src/jni/NativeHttp.cpp \
 	generated-src/jni/NativeHttpCallback.cpp \
 	generated-src/jni/NativePhotoModel.cpp \

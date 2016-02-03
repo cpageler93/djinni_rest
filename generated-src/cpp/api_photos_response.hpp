@@ -9,6 +9,11 @@ namespace djinni_rest_gen {
 
 struct PhotoModel;
 
+/**
+ *hello_model = record {
+ *	welcome_title: string;
+ *}
+ */
 class ApiPhotosResponse {
 public:
     virtual ~ApiPhotosResponse() {}
